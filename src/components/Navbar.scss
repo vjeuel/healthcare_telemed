@@ -1,0 +1,17 @@
+nav {
+   display: grid;
+   grid-template-rows: 1fr 2fr;
+
+   .logoTop {
+      width: 20rem;
+   }
+
+   .navTop {
+      display: grid;
+      grid-auto-columns: ;
+   }
+
+   .navBottom {
+      display: grid;
+   }
+}
