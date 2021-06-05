@@ -1,0 +1,22 @@
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+}
+
+nav .logoTop {
+  width: 20rem;
+}
+
+nav .navTop {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr 2fr;
+}
+
+nav .navBottom {
+  display: -ms-grid;
+  display: grid;
+}
+/*# sourceMappingURL=Navbar.css.map */

@@ -1,7 +1,29 @@
-html {
-   font-size: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;0,400;0,600;1,200;1,400&display=swap');
+
+:root {
+   --wt: #F5FAFF;
+   --pb: #10217D;
+   --sb: #1CB5E0;
+   --bl: #000000;
+   --rd: #D00000;
+ 
 }
 
-body {
-   background-color: black;
+* {
+   box-sizing: : border-box;
 }
+
+html {
+   background-color: var(--wt);
+     font-size: 10px;
+   font-family: 'Prompt', sans-serif;
+}
+
+/*# sourceMappingURL=index.css.map */
+
+/* FONTS */
+/* Prompt Extra-light 200 */
+/* Prompt Extra-light Italic 200 */
+/* Prompt Regular 400 */
+/* Prompt Regular Italic 400 */
+/* Prompt Semi-bold 600 */
