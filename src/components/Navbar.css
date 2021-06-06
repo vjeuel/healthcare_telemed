@@ -1,22 +1,77 @@
 nav {
+  border-color: var(--wt);
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 2fr;
-      grid-template-rows: 1fr 2fr;
+  -ms-grid-rows: 5rem 10rem;
+      grid-template-rows: 5rem 10rem;
+  -ms-grid-columns: 25rem 2fr;
+      grid-template-columns: 25rem 2fr;
 }
 
 nav .logoTop {
-  width: 20rem;
+  width: 14rem;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 nav .navTop {
   display: -ms-grid;
   display: grid;
-  grid-auto-columns: 1fr 2fr;
+  -ms-grid-columns: 3fr auto 1fr (auto)[4];
+      grid-template-columns: 3fr auto 1fr repeat(4, auto);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+nav .navTop .button1 {
+  text-align: center;
+  color: var(--pb);
+  padding: 1rem 5rem;
+  border-left: var(--sb) solid 2px;
+}
+
+nav .navTop .buttonPhone {
+  border-right: var(--sb) solid 2px;
 }
 
 nav .navBottom {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (auto)[8];
+      grid-template-columns: repeat(8, auto);
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+nav .navBottom .button1 {
+  text-align: center;
+  color: var(--pb);
+  padding: 1rem 5rem;
+}
+
+nav .navBottom .button2 {
+  background-color: var(--sb);
+  color: var(--wt);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+nav .navBottom .buttonRight {
+  margin-right: 5rem;
 }
 /*# sourceMappingURL=Navbar.css.map */
