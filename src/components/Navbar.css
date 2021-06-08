@@ -3,7 +3,7 @@ nav {
   display: -ms-grid;
   display: grid;
   width: 100vw;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
   margin-right: 5rem;
   -ms-grid-rows: 5rem 10rem;
       grid-template-rows: 5rem 10rem;

@@ -2,7 +2,7 @@ nav {
    border-color: var(--wt);
    display: grid;
    width: 100vw;
-   margin-bottom: 1rem;
+   margin-bottom: 2.5rem;
    margin-right: 5rem;
    grid-template-rows: 5rem 10rem;
    grid-template-columns: 40rem 2fr;
@@ -38,15 +38,9 @@ nav {
    .navBottom {
       display: grid;
       grid-template-rows: 1fr 2fr;
-      // grid-template-columns: repeat(2, auto);
-      // grid-gap: 2rem;
       align-items: center;
       justify-content: center;
       border-top: var(--sb) solid 2px;
-      // border-left: var(--sb) solid 2px;
-      // border-bottom: var(--sb) solid 2px;
-      // border-top-left-radius: 50px;
-      // border-bottom-left-radius: 50px;
       
       .button1 {
          text-align: center;

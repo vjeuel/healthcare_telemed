@@ -1,20 +1,25 @@
 import React from 'react';
 import './Intro.css';
-// import introPic from './img/online-marketing-hIgeoQjS_iE-unsplash.jpg';
 
 function Intro() {
 	return (
 		<div>
 			<div className='introContainer'>
-				<img className='introImage' />
-				<section>
+				<img className='introImage' alt='' />
+				<div className='introBox'>
 					<h1>Healthcare Evolution</h1>
-				</section>
+					<h3>
+						The healthcare industry is undergoing a digital evolution – with video communication playing a vital
+						role. Discover why a high-quality, easy-to-use video conferencing solution is essential for
+						telehealth.
+					</h3>
+					<h3>We are HIPAA-compliant telemedicine. </h3>
+				</div>
 			</div>
 			<div className='about'>
 				<div className='aboutBox'>
 					<div className='aboutImageBox'>
-						<img className='aboutImage' />
+						<img className='aboutImage' alt='' />
 					</div>
 					<div className='aboutTextBox'>
 						<h2>About</h2>
