@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.css';
+import { NavLink } from 'react-router-dom';
 import logo from './img/logo-horizontal.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
@@ -13,46 +14,44 @@ function Navbar() {
 			<nav>
 				<img src={logo} className='logoTop' alt='logo'></img>
 				<div className='navTop'>
-					{/* <div></div> */}
-					<a href='' className='button1'>
+					<a href='tel:18002355656' className='button1'>
 						<FontAwesomeIcon icon={faPhoneAlt} className='faIcon' />1 800-235-5656
 					</a>
-					<div></div>
-					<a href='' className='button1'>
+					<NavLink to='/' className='button1'>
 						<FontAwesomeIcon icon={faHome} className='faIcon' />
 						HOME
-					</a>
-					<a href='' className='button1 buttonRight'>
+					</NavLink>
+					<NavLink to='/contact' className='button1 buttonRight'>
 						<FontAwesomeIcon icon={faPhoneAlt} className='faIcon' />
 						CONTACT US
-					</a>
+					</NavLink>
 					<a href='https://healthcaretelemed.letstalk.video/' className='button1'>
 						<FontAwesomeIcon icon={faShieldAlt} className='faIcon' />
 						LOGIN
 					</a>
-					<a href='' className='button1'>
+					<NavLink to='/applyNow' className='button1'>
 						<FontAwesomeIcon icon={faUser} className='faIcon' />
 						APPLY NOW
-					</a>
+					</NavLink>
 				</div>
 				<div className='navBottom'>
-					<p>Solutions for</p>
+					<span>Solutions for</span>
 					<div>
-						<a href='' className='button2'>
+						<NavLink to='/dmePhaLabBus' className='button2'>
 							DME
-						</a>
-						<a href='' className='button2'>
+						</NavLink>
+						<NavLink to='/dmePhaLabBus' className='button2'>
 							Pharmarcies
-						</a>
-						<a href='' className='button2'>
+						</NavLink>
+						<NavLink to='/dmePhaLabBus' className='button2'>
 							Labs
-						</a>
-						<a href='' className='button2'>
+						</NavLink>
+						<NavLink to='/dmePhaLabBus' className='button2'>
 							Businesses
-						</a>
-						<a href='' className='button2'>
+						</NavLink>
+						<NavLink to='/providers' className='button2'>
 							Providers
-						</a>
+						</NavLink>
 					</div>
 				</div>
 			</nav>
