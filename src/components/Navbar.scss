@@ -1,11 +1,14 @@
 nav {
    border-color: var(--wt);
    display: grid;
+   width: 100vw;
+   margin-bottom: 1rem;
+   margin-right: 5rem;
    grid-template-rows: 5rem 10rem;
-   grid-template-columns: 25rem 2fr;
+   grid-template-columns: 40rem 2fr;
    
    .logoTop {
-      width: 14rem;
+      width: 22rem;
       grid-row-start: 1;
       grid-row-end: 3;
       justify-self: center;
@@ -14,28 +17,36 @@ nav {
    
    .navTop {
       display: grid;
-      grid-template-columns: 3fr auto 1fr repeat(4, auto);
+      grid-template-columns: auto repeat(5, auto);
       align-items: center;
       justify-content: right;
 
+      .faIcon {
+         width: 1.1rem;
+         margin-right: 5px;
+      }
+   
       .button1 {
          text-align: center;
          color: var(--pb);
-         padding: 1rem 5rem;
+         padding: 1rem 2rem;
          border-left: var(--sb) solid 2px;
       }
       
-      .buttonPhone {
-         border-right: var(--sb) solid 2px;
-      }
    }
    
    .navBottom {
       display: grid;
-      grid-template-columns: repeat(8, auto);
-      grid-gap: 2rem;
+      grid-template-rows: 1fr 2fr;
+      // grid-template-columns: repeat(2, auto);
+      // grid-gap: 2rem;
       align-items: center;
-      justify-content: right;
+      justify-content: center;
+      border-top: var(--sb) solid 2px;
+      // border-left: var(--sb) solid 2px;
+      // border-bottom: var(--sb) solid 2px;
+      // border-top-left-radius: 50px;
+      // border-bottom-left-radius: 50px;
       
       .button1 {
          text-align: center;
@@ -46,6 +57,7 @@ nav {
       .button2 {
          background-color: var(--sb);
          color: var(--wt);
+         margin: 1rem;
          padding: 1rem 2rem;
          border-radius: 10px;
 

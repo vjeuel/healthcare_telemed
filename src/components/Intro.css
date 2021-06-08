@@ -1,0 +1,53 @@
+.introContainer {
+  position: relative;
+}
+
+.introContainer .introImage {
+  background: url(./img/online-marketing-hIgeoQjS_iE-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  height: calc(100vh - 163px);
+  width: 100%;
+  margin: auto;
+  border-top: var(--pb) solid 8px;
+  border-bottom: var(--sb) solid 8px;
+}
+
+.introContainer h1 {
+  position: relative;
+  top: -30rem;
+}
+
+.about {
+  background-color: var(--lpb);
+  border-bottom: var(--sb) solid 1rem;
+  margin: 0 auto;
+  padding: 10rem 5%;
+}
+
+.about .aboutBox {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 50rem;
+      grid-template-columns: 1fr 50rem;
+  max-width: 100vw;
+  width: 100%;
+}
+
+.about .aboutImageBox {
+  background: url(./img/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.about .aboutTextBox {
+  background-color: var(--wt);
+  padding: 5rem;
+}
+
+.about .aboutTextBoxLine {
+  border-bottom: var(--sb) solid 1px;
+  padding: 3rem 0;
+}
+/*# sourceMappingURL=Intro.css.map */

@@ -1,0 +1,20 @@
+footer {
+  margin-top: 5rem;
+  outline: red solid 2px;
+}
+
+footer .footerLogo {
+  width: 10rem;
+  margin: 2.5rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+footer .faIcon {
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+/*# sourceMappingURL=Footer.css.map */
