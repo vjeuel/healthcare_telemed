@@ -48,11 +48,17 @@ p {
   margin-bottom: 2rem;
 }
 
-a, span {
+a {
   font-weight: 400;
   font-size: 1.3rem;
   letter-spacing: 1px;
   text-decoration: none;
+}
+
+span {
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
 }
 
 .App {

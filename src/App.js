@@ -1,10 +1,8 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, withRouter } from 'react-router-dom';
-import Navbar from './components/Navbar';
 import Intro from './components/Intro';
-import Footer from './components/Footer';
-// ---------------------------------------------------------
+// --------
 import Contact from './components/pages/Contact';
 import ApplyNow from './components/pages/ApplyNow';
 import DmePhaLabBus from './components/pages/DmePhaLabBus.js';

@@ -62,6 +62,10 @@ nav .navBottom {
   border-top: var(--sb) solid 2px;
 }
 
+nav .navBottom span {
+  margin: 2rem;
+}
+
 nav .navBottom .button1 {
   text-align: center;
   color: var(--pb);

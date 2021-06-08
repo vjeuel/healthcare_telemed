@@ -41,6 +41,10 @@ nav {
       align-items: center;
       justify-content: center;
       border-top: var(--sb) solid 2px;
+
+      span {
+         margin: 2rem;
+      }
       
       .button1 {
          text-align: center;

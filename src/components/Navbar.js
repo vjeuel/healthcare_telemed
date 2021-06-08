@@ -17,41 +17,29 @@ function Navbar() {
 					<a href='tel:18002355656' className='button1'>
 						<FontAwesomeIcon icon={faPhoneAlt} className='faIcon' />1 800-235-5656
 					</a>
-					<NavLink to='/' className='button1'>
-						<FontAwesomeIcon icon={faHome} className='faIcon' />
-						HOME
-					</NavLink>
-					<NavLink to='/contact' className='button1 buttonRight'>
-						<FontAwesomeIcon icon={faPhoneAlt} className='faIcon' />
-						CONTACT US
-					</NavLink>
+					{navTopLinks.map((data) => {
+						return (
+							<NavLink to={data.link} className='button1'>
+								<FontAwesomeIcon icon={data.icon} className='faIcon' />
+								{data.menu}
+							</NavLink>
+						);
+					})}
 					<a href='https://healthcaretelemed.letstalk.video/' className='button1'>
 						<FontAwesomeIcon icon={faShieldAlt} className='faIcon' />
 						LOGIN
 					</a>
-					<NavLink to='/applyNow' className='button1'>
-						<FontAwesomeIcon icon={faUser} className='faIcon' />
-						APPLY NOW
-					</NavLink>
 				</div>
 				<div className='navBottom'>
 					<span>Solutions for</span>
 					<div>
-						<NavLink to='/dmePhaLabBus' className='button2'>
-							DME
-						</NavLink>
-						<NavLink to='/dmePhaLabBus' className='button2'>
-							Pharmarcies
-						</NavLink>
-						<NavLink to='/dmePhaLabBus' className='button2'>
-							Labs
-						</NavLink>
-						<NavLink to='/dmePhaLabBus' className='button2'>
-							Businesses
-						</NavLink>
-						<NavLink to='/providers' className='button2'>
-							Providers
-						</NavLink>
+						{navBottomLinks.map((data) => {
+							return (
+								<NavLink to={data.link} className='button2'>
+									{data.menu}
+								</NavLink>
+							);
+						})}
 					</div>
 				</div>
 			</nav>
@@ -59,4 +47,77 @@ function Navbar() {
 	);
 }
 
+const navTopLinks = [
+	{
+		menu: 'HOME',
+		link: '/',
+		icon: faHome,
+	},
+	{
+		menu: 'CONTACT US',
+		link: '/contact',
+		icon: faPhoneAlt,
+	},
+	{
+		menu: 'APPLY NOW',
+		link: '/applyNow',
+		icon: faUser,
+	},
+];
+
+const navBottomLinks = [
+	{
+		menu: 'DME',
+		link: '/dmePhaLabBus',
+	},
+	{
+		menu: 'Pharmacies',
+		link: '/dmePhaLabBus',
+	},
+	{
+		menu: 'Labs',
+		link: '/dmePhaLabBus',
+	},
+	{
+		menu: 'Providers',
+		link: '/providers',
+	},
+];
+
 export default Navbar;
+
+/* <NavLink to='/dmePhaLabBus' className='button2'>
+DME
+</NavLink>
+<NavLink to='/dmePhaLabBus' className='button2'>
+Pharmarcies
+</NavLink>
+<NavLink to='/dmePhaLabBus' className='button2'>
+Labs
+</NavLink>
+<NavLink to='/dmePhaLabBus' className='button2'>
+Businesses
+</NavLink>
+<NavLink to='/providers' className='button2'>
+Providers
+</NavLink> */
+
+/* <a href='tel:18002355656' className='button1'>
+<FontAwesomeIcon icon={faPhoneAlt} className='faIcon' />1 800-235-5656
+</a>
+<NavLink to='/' className='button1'>
+<FontAwesomeIcon icon={faHome} className='faIcon' />
+HOME
+</NavLink>
+<NavLink to='/contact' className='button1 buttonRight'>
+<FontAwesomeIcon icon={faPhoneAlt} className='faIcon' />
+CONTACT US
+</NavLink>
+<a href='https://healthcaretelemed.letstalk.video/' className='button1'>
+<FontAwesomeIcon icon={faShieldAlt} className='faIcon' />
+LOGIN
+</a>
+<NavLink to='/applyNow' className='button1'>
+<FontAwesomeIcon icon={faUser} className='faIcon' />
+APPLY NOW
+</NavLink> */
