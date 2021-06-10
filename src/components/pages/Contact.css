@@ -1,8 +1,44 @@
 .contactContainer {
+  width: 100%;
+  height: calc(100vh - 163px);
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.contactContainer .contactBox {
   background-color: var(--lpb);
-  height: 30rem;
-  width: 60rem;
-  border: var(--sb) solid 1px;
+  height: auto;
+  width: 50rem;
+  margin: 10rem 5rem;
+  padding: 2rem;
+  border: var(--sb) solid 5px;
   border-radius: 2rem;
+}
+
+.contactContainer .contactBox h3 {
+  margin: 0;
+}
+
+.contactContainer .contactBox .contactForm .formFieldBox {
+  margin: 2rem 0;
+  outline: red solid 2px;
+}
+
+.contactContainer .contactBox .contactForm .formFieldBox span {
+  display: block;
+  padding: 1rem;
+}
+
+.contactContainer .contactBox .contactForm .formFieldBox .formField {
+  width: 90%;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 /*# sourceMappingURL=Contact.css.map */

@@ -7,8 +7,7 @@
    width: 100%;
    display: grid;
    grid-template-rows: 2fr 1fr 1fr;
-   border-top: var(--pb) solid 8px;
-
+   
    .introImage {
       margin: auto;
       grid-area: 1 / 1 / 4 / 4;

@@ -1,9 +1,51 @@
 .contactContainer {
-   background-color: var(--lpb);
-   height: 30rem;
-   width: 60rem;
-   border: var(--sb) solid 1px;
-   border-radius: 2rem;
+   width: 100%;
+   height: calc(100vh - 163px);
+   margin: 0 auto;
+   display: grid;
+   grid-template-rows: 1fr;
+   align-items: center;
+   justify-items: center;
+   
+   .contactBox {
+      background-color: var(--lpb);
+      height: auto;
+      width: 50rem;
+      margin: 10rem 5rem;
+      padding: 2rem;
+      border: var(--sb) solid 5px;
+      border-radius: 2rem;
 
+      h3 {
+         margin: 0;
+      }
 
+      
+      .contactForm {
+
+         
+         .formFieldBox {
+            margin: 0;
+
+            
+            span {
+               display: block;
+               padding: 1rem;
+               
+            }
+            
+            .formField {
+               width: 90%;
+               padding: 1rem;
+               border-radius: 0.5rem;
+               outline: red solid 2px;
+         }
+      }
+         
+         .formMessage {
+            height: 10rem;
+      }
+      
+      
+   }
 }

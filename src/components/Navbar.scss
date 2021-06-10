@@ -2,13 +2,16 @@ nav {
    border-color: var(--wt);
    display: grid;
    width: 100vw;
-   margin-bottom: 2.5rem;
+   padding-bottom: 2.5rem;
    margin-right: 5rem;
    grid-template-rows: 5rem 10rem;
    grid-template-columns: 40rem 2fr;
+   border-bottom: var(--pb) solid 8px;
    
    .logoTop {
       width: 22rem;
+      position: relative;
+      top: 1.5rem;
       grid-row-start: 1;
       grid-row-end: 3;
       justify-self: center;
@@ -60,9 +63,6 @@ nav {
          border-radius: 10px;
 
       }
-      
-      .buttonRight {
-         margin-right: 5rem;
-      }
+
    }
 }

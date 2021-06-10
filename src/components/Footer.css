@@ -23,6 +23,7 @@ footer .socialMedia .faBrands {
   color: var(--sb);
   width: 100%;
   margin: 0 auto;
+  padding: 0 2rem;
   height: 2.5rem;
 }
 

@@ -9,7 +9,6 @@
   display: grid;
   -ms-grid-rows: 2fr 1fr 1fr;
       grid-template-rows: 2fr 1fr 1fr;
-  border-top: var(--pb) solid 8px;
 }
 
 .introContainer .introImage {
