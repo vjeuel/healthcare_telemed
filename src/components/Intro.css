@@ -49,9 +49,9 @@
 }
 
 .about {
-  background-color: var(--lpb);
+  background: #1cb5e0;
+  background: linear-gradient(-143deg, #1cb5e0 0%, #10217d 100%);
   border-top: var(--sb) solid 1rem;
-  border-bottom: var(--pb) solid 1rem;
   margin: 0 auto;
   padding: 10rem 5%;
 }

@@ -40,9 +40,10 @@
 }
 
 .about {
-   background-color: var(--lpb);
+   background: rgb(28,181,224);
+   background: linear-gradient(-143deg, rgba(28,181,224,1) 0%, rgba(16,33,125,1) 100%);
+   // background-color: var(--lpb);
    border-top: var(--sb) solid 1rem;
-   border-bottom: var(--pb) solid 1rem;
    margin: 0 auto;
    padding: 10rem 5%;
    
