@@ -74,7 +74,7 @@
 }
 
 .about .aboutBox .aboutTextBox {
-  background-color: var(--wt);
+  background-color: rgba(235, 237, 255, 0.8);
   padding: 5rem;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;

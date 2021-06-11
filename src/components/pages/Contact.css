@@ -23,7 +23,7 @@
 }
 
 .contactContainer .contactBox {
-  background-color: rgba(235, 237, 255, 0.3);
+  background-color: rgba(235, 237, 255, 0.5);
   height: auto;
   width: 50rem;
   padding: 2.5rem;
@@ -41,15 +41,15 @@
   border-radius: 0.5rem;
 }
 
-.contactContainer .contactBox .contactForm .formFieldBox span {
+.contactContainer .contactBox .contactForm .formFieldBox .errorMessage {
   font-size: 1.25rem;
   font-weight: 400;
   letter-spacing: 1px;
   display: block;
   color: var(--rd);
   margin: 0 2.5rem;
-  padding: 1rem;
   padding-bottom: 2rem;
+  border-radius: 0.5rem;
 }
 
 .contactContainer .contactBox .contactForm .formFieldBox .formField {
@@ -78,5 +78,6 @@
   margin-top: 2rem;
   padding: 1rem;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 /*# sourceMappingURL=Contact.css.map */

@@ -15,6 +15,8 @@ function Contact() {
 
 	const [submitted, setSubmitted] = useState(false);
 
+	const [valid, setValid] = useState(false);
+
 	const handleFirstNameInputChange = (event) => {
 		setValues({ ...values, firstName: event.target.value });
 	};
@@ -41,6 +43,9 @@ function Contact() {
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
+		if (values.firstName && values.lastName && values.email && values.businessType && values.message) {
+			setValid(true);
+		}
 		setSubmitted(true);
 	};
 
@@ -50,7 +55,7 @@ function Contact() {
 			<section className='contactContainer'>
 				<div className='contactBox'>
 					<h3>Contact Form</h3>
-					{submitted ? <div class='successMessage'>Success! Thank you for registering!</div> : null}
+					{submitted && valid ? <div class='successMessage'>Success! Thank you for registering!</div> : null}
 					<form class='contactForm' onSubmit={handleSubmit} action='vjeuel@gmail.com'>
 						<div className='formFieldBox'>
 							<input
@@ -59,11 +64,13 @@ function Contact() {
 								id='firstName'
 								className='formField'
 								type='text'
-								placeholder='First Name'
+								placeholder='First Name *'
 								name='firstName'
 							/>
 							{submitted && !values.firstName ? (
-								<span id='first-name-error'>Please enter a first name</span>
+								<span id='first-name-error' className='errorMessage'>
+									Please enter a first name
+								</span>
 							) : null}
 						</div>
 						<div className='formFieldBox'>
@@ -73,10 +80,14 @@ function Contact() {
 								id='lastName'
 								className='formField'
 								type='text'
-								placeholder='Last Name'
+								placeholder='Last Name *'
 								name='lastName'
 							/>
-							{submitted && !values.lastName ? <span id='last-name-error'>Please enter a last name</span> : null}
+							{submitted && !values.lastName ? (
+								<span id='last-name-error' className='errorMessage'>
+									Please enter a last name
+								</span>
+							) : null}
 						</div>
 						<div className='formFieldBox'>
 							<input
@@ -88,7 +99,11 @@ function Contact() {
 								placeholder='Phone number'
 								name='phone'
 							/>
-							{submitted && !values.phone ? <span id='last-name-error'>Please enter a phone number</span> : null}
+							{submitted && !values.phone ? (
+								<span id='last-name-error' className='errorMessage'>
+									Please enter a phone number
+								</span>
+							) : null}
 						</div>
 						<div className='formFieldBox'>
 							<input
@@ -97,10 +112,14 @@ function Contact() {
 								id='email'
 								className='formField'
 								type='text'
-								placeholder='Email'
+								placeholder='Email *'
 								name='email'
 							/>
-							{submitted && !values.email ? <span id='last-name-error'>Please enter an email</span> : null}
+							{submitted && !values.email ? (
+								<span id='last-name-error' className='errorMessage'>
+									Please enter an email
+								</span>
+							) : null}
 						</div>
 						<div className='formFieldBox'>
 							<select
@@ -110,7 +129,8 @@ function Contact() {
 								className='formField'
 								type='text'
 								name='service'>
-								<option value='DME'>DME</option>
+								<option value='choice'>Choose one *</option>
+								<option value='dme'>DME</option>
 								<option value='pharmacies'>Pharmacy</option>
 								<option value='labs'>Lab</option>
 								<option value='business'>Business</option>
@@ -118,7 +138,9 @@ function Contact() {
 								<option value='other'>Other</option>
 							</select>
 							{submitted && !values.businessType ? (
-								<span id='last-name-error'>Choose the type of service</span>
+								<span id='last-name-error' className='errorMessage'>
+									Choose the type of service
+								</span>
 							) : null}
 						</div>
 						<div className='formFieldBox'>
@@ -128,10 +150,14 @@ function Contact() {
 								id='message'
 								className='formField formMessage'
 								type='textarea'
-								placeholder='Message'
+								placeholder='Message *'
 								name='message'
 							/>
-							{submitted && !values.message ? <span id='last-name-error'>Please enter your message</span> : null}
+							{submitted && !values.message ? (
+								<span id='last-name-error' className='errorMessage'>
+									Please enter your message
+								</span>
+							) : null}
 						</div>
 						<button className='button' type='submit'>
 							submit

@@ -58,11 +58,6 @@ const navTopLinks = [
 		link: '/contact',
 		icon: faPhoneAlt,
 	},
-	{
-		menu: 'APPLY NOW',
-		link: '/applyNow',
-		icon: faUser,
-	},
 ];
 
 const navBottomLinks = [
