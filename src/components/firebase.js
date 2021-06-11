@@ -8,12 +8,12 @@ const inputEmail = form.querySelector('#inputEmail');
 
 //config your firebase push
 const config = {
-	apiKey: 'AIzaSyCfI_1234455glTdTNjFA3kAvmimlU',
-	authDomain: 'example-9167e.firebaseapp.com',
-	databaseURL: 'example-9167e.firebaseio.com',
-	projectId: 'example-9167e',
-	storageBucket: 'example-9167e.appspot.com',
-	messagingSenderId: '6271234586832',
+	apiKey: '0628b370d479c1acc91a353760f643c78cf33375',
+	authDomain: 'healthcare-telemed.firebaseapp.com',
+	databaseURL: 'healthcare-telemed.firebaseio.com',
+	projectId: 'healthcare-telemed',
+	storageBucket: 'healthcare-telemed.appspot.com',
+	messagingSenderId: '319227846283',
 };
 
 //create a functions to push
