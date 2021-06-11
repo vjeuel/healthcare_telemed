@@ -8,7 +8,7 @@ const inputEmail = form.querySelector('#inputEmail');
 
 //config your firebase push
 const config = {
-	apiKey: '0628b370d479c1acc91a353760f643c78cf33375',
+	apiKey: '65be2bc844d4da68c4591da932bbee0f2e31c76e',
 	authDomain: 'healthcare-telemed.firebaseapp.com',
 	databaseURL: 'healthcare-telemed.firebaseio.com',
 	projectId: 'healthcare-telemed',
