@@ -1,12 +1,12 @@
 import React from 'react';
-import Navbar from './Navbar';
+import NavBar from './Navbar';
 import Footer from './Footer';
 import './Intro.css';
 
 function Intro() {
 	return (
 		<div>
-			<Navbar />
+			<NavBar />
 			<div className='introContainer'>
 				<img className='introImage' alt='' />
 				<div className='introBox'>

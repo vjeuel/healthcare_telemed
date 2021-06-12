@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
-import Navbar from '../../components/Navbar';
+import { firebase } from '../../initFirebase';
+// import { useRouter } from 'next/router';
+//-------------------
+import NavBar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import './Contact.css';
+
+const db = firebase.database();
 
 function Contact() {
 	const [values, setValues] = useState({
@@ -12,6 +17,8 @@ function Contact() {
 		businessType: '',
 		message: '',
 	});
+
+	// const router = useRouter();
 
 	const [submitted, setSubmitted] = useState(false);
 
@@ -47,16 +54,32 @@ function Contact() {
 			setValid(true);
 		}
 		setSubmitted(true);
+		const contactRef = db.ref('contacts');
+		const newContactRef = contactRef.push();
+		newContactRef.set({
+			firstName: values.firstName,
+			lastName: values.lastName,
+			phone: values.phone,
+			email: values.email,
+			businessType: values.businessType,
+			message: values.message,
+		});
+
+		db.ref('contacts').push(newContactRef.key);
+		// contactRef.push(`/contacts/${newContactRef.key}`);
+		// newContactRef(newContactRef.key);
+
+		// router.push(`/contacts/${values.newContactRef}`);
 	};
 
 	return (
 		<div>
-			<Navbar />
+			<NavBar />
 			<section className='contactContainer'>
 				<div className='contactBox'>
 					<h3>Contact Form</h3>
-					{submitted && valid ? <div class='successMessage'>Success! Thank you for registering!</div> : null}
-					<form class='contactForm' onSubmit={handleSubmit} action='vjeuel@gmail.com'>
+					{submitted && valid ? <div className='successMessage'>Success! Thank you for registering!</div> : null}
+					<form className='contactForm' onSubmit={handleSubmit}>
 						<div className='formFieldBox'>
 							<input
 								value={values.firstName}
@@ -125,17 +148,17 @@ function Contact() {
 							<select
 								value={values.businessType}
 								onChange={handleBusinessTypeInputChange}
-								id='select'
+								id='businessType'
 								className='formField'
 								type='text'
-								name='service'>
-								<option value='choice'>Choose one *</option>
-								<option value='dme'>DME</option>
-								<option value='pharmacies'>Pharmacy</option>
-								<option value='labs'>Lab</option>
-								<option value='business'>Business</option>
-								<option value='provider'>Provider</option>
-								<option value='other'>Other</option>
+								name='businessType'>
+								<option value='businessType'>Choose one *</option>
+								<option value='DME'>DME</option>
+								<option value='Pharmacy'>Pharmacy</option>
+								<option value='Lab'>Lab</option>
+								<option value='Business'>Business</option>
+								<option value='Provider'>Provider</option>
+								<option value='Other'>Other</option>
 							</select>
 							{submitted && !values.businessType ? (
 								<span id='last-name-error' className='errorMessage'>

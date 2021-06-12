@@ -6,9 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faShieldAlt } from '@fortawesome/free-solid-svg-icons';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+// import { faUser } from '@fortawesome/free-solid-svg-icons';
 
-function Navbar() {
+function NavBar() {
 	return (
 		<div>
 			<nav>
@@ -17,11 +17,11 @@ function Navbar() {
 					<a href='tel:18002355656' className='button1'>
 						<FontAwesomeIcon icon={faPhoneAlt} className='faIcon' />1 800-235-5656
 					</a>
-					{navTopLinks.map((data) => {
+					{navTopLinks.map((data, index) => {
 						return (
-							<NavLink to={data.link} className='button1'>
-								<FontAwesomeIcon icon={data.icon} className='faIcon' />
-								{data.menu}
+							<NavLink to={data.link} className='button1' key={index.link}>
+								<FontAwesomeIcon icon={data.icon} className='faIcon' key={index.icon} />
+								{data.menu} {index.menu}
 							</NavLink>
 						);
 					})}
@@ -33,10 +33,10 @@ function Navbar() {
 				<div className='navBottom'>
 					<span>Solutions for</span>
 					<div>
-						{navBottomLinks.map((data) => {
+						{navBottomLinks.map((data, index) => {
 							return (
-								<NavLink to={data.link} className='button2'>
-									{data.menu}
+								<NavLink to={data.link} className='button2' key={index.link}>
+									{data.menu} {index.menu}
 								</NavLink>
 							);
 						})}
@@ -79,7 +79,7 @@ const navBottomLinks = [
 	},
 ];
 
-export default Navbar;
+export default NavBar;
 
 /* <NavLink to='/dmePhaLabBus' className='button2'>
 DME
