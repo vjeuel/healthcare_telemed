@@ -1,0 +1,52 @@
+.providers {
+  background: #1cb5e0;
+  background: linear-gradient(-143deg, #1cb5e0 0%, #10217d 100%);
+  margin: 0 auto;
+  padding: 10rem 5%;
+}
+
+.providers .providersBox {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60rem 1fr;
+      grid-template-columns: 60rem 1fr;
+  max-width: 100vw;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.providers .providersBox .providersTextBox {
+  background-color: rgba(235, 237, 255, 0.8);
+  padding: 5rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.providers .providersBox .providersImageBox {
+  background: url("../img/national-cancer-institute-gO-iULv-qbU-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.providers .providersBox .providersTextBoxLine {
+  border-bottom: var(--sb) solid 1px;
+  padding: 3rem 0;
+}
+
+.providers .providersContactContainer {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+/*# sourceMappingURL=Providers.css.map */

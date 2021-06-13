@@ -23,10 +23,10 @@ function Intro() {
 			<div className='about'>
 				<div className='aboutBox'>
 					<div className='aboutImageBox'>
-						<img className='aboutImage' alt='' />
+						<img alt='' />
 					</div>
 					<div className='aboutTextBox'>
-						<h2>About</h2>
+						<h1>About</h1>
 						<p className='aboutTextBoxLine'>
 							Learn how healthcare providers are using the latest video calling software to{' '}
 							<strong style={{ color: 'var(--pb)' }}>make telehealth a reality</strong> and improve the quality,
