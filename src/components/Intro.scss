@@ -43,6 +43,7 @@
    background: rgb(28,181,224);
    background: linear-gradient(-143deg, rgba(28,181,224,1) 0%, rgba(16,33,125,1) 100%);
    border-top: var(--sb) solid 1rem;
+   border-bottom: var(--lpb) solid 1rem;
    margin: 0 auto;
    padding: 10rem 5%;
    
@@ -74,3 +75,15 @@
       }
    }
 }  
+
+.introContactContainer {
+      background: var(--lpb);
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      padding: 5rem;
+      display: grid;
+      grid-template-rows: 1fr;
+      align-items: center;
+      justify-items: center;
+}

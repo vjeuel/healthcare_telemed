@@ -1,0 +1,66 @@
+.contactBox {
+  background-color: rgba(235, 237, 255, 0.75);
+  height: auto;
+  width: 50rem;
+  padding: 2.5rem;
+  border-radius: 2rem;
+}
+
+.contactBox .successMessage {
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  background-color: green;
+  color: var(--wt);
+  margin: 1rem 2.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.contactBox .contactForm .formFieldBox {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.contactBox .contactForm .formFieldBox .errorMessage {
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  display: block;
+  color: var(--rd);
+  width: 60%;
+  margin: 0 2.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.contactBox .contactForm .formFieldBox .formField {
+  font-size: 1.5rem;
+  width: 90%;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0 2px 2px var(--sb);
+          box-shadow: 0 0 2px 2px var(--sb);
+}
+
+.contactBox .contactForm .formFieldBox .formMessage {
+  height: 10rem;
+}
+
+.contactBox .contactForm button {
+  all: unset;
+  background-color: var(--pb);
+  color: var(--wt);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 50%;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=ContactForm.css.map */

@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from './Navbar';
 import Footer from './Footer';
 import './Intro.css';
+import ContactForm from './ContactForm';
 
 function Intro() {
 	return (
@@ -58,6 +59,9 @@ function Intro() {
 					</div>
 				</div>
 			</div>
+			<section className='introContactContainer'>
+				<ContactForm />
+			</section>
 			<Footer />
 		</div>
 	);

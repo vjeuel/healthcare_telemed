@@ -52,6 +52,7 @@
   background: #1cb5e0;
   background: linear-gradient(-143deg, #1cb5e0 0%, #10217d 100%);
   border-top: var(--sb) solid 1rem;
+  border-bottom: var(--lpb) solid 1rem;
   margin: 0 auto;
   padding: 10rem 5%;
 }
@@ -83,5 +84,21 @@
 .about .aboutBox .aboutTextBoxLine {
   border-bottom: var(--sb) solid 1px;
   padding: 3rem 0;
+}
+
+.introContactContainer {
+  background: var(--lpb);
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
 /*# sourceMappingURL=Intro.css.map */
