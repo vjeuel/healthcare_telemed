@@ -1,12 +1,10 @@
 .dme {
-   background: rgb(28,181,224);
-   background: linear-gradient(-143deg, rgba(28,181,224,1) 0%, rgba(16,33,125,1) 100%);
-   margin: 0 auto;
-   padding: 10rem 5%;
-   
-   .dmeBox {
-      display: grid;
-      grid-template-columns: 60rem 1fr;
+      margin: 0 auto;
+      padding: 10rem 5%;
+      
+      .dmeBox {
+         display: grid;
+         grid-template-columns: 60rem 1fr;
       max-width: 100vw;
       width: 80%;
       margin: 0 auto;
@@ -17,17 +15,17 @@
          padding: 5rem;
          border-top-left-radius: 2rem;
          border-bottom-left-radius: 2rem;
-
+         
          h2 {
             margin-bottom: 0;
             padding: 0;
          }
-
+         
          p {
             margin: 0;
          }
       }
-
+      
       .dmeImageBox{
          background: url('../img/john-schnobrich-FlPc9_VocJ4-unsplash.jpg');
          background-size: cover;
@@ -41,7 +39,7 @@
          padding: 3rem 0;
       }
    }
-
+   
    .dmeContactContainer {
       width: 100%;
       height: auto;
@@ -53,4 +51,3 @@
       justify-items: center;
    }
 }
-   

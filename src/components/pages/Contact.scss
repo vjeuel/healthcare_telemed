@@ -1,6 +1,4 @@
 .contactContainer {
-   background: rgb(28,181,224);
-   background: linear-gradient(-143deg, rgba(28,181,224,1) 0%, rgba(16,33,125,1) 100%);
    width: 100%;
    min-height: calc(100vh - 163px);
    height: auto;
@@ -13,14 +11,14 @@
    
    .contactBox {
       margin: 2.5rem;
-   
+      
    }
    
    h4 {
-      text-align: left;
-      margin: 0;
-      margin-bottom: 1rem;
-      padding: 0;
+   text-align: left;
+   margin: 0;
+   margin-bottom: 1rem;
+   padding: 0;
    }
    
    .contactGrid {
@@ -30,15 +28,15 @@
       justify-items: flex-start;
       align-items: center;
       margin-bottom: 3rem;
-
+      
       p, a {
          font-size: 1.25rem;
          text-align: left;
       }
-
+      
       p {
          color: var(--bl);
-
+         
       }
    }
 

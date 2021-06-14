@@ -7,17 +7,19 @@ import ContactForm from './ContactForm';
 function Intro() {
 	return (
 		<div>
-			<NavBar />
-			<div className='introContainer'>
+			<div className='jumbotronPic'>
 				<img className='introImage' alt='' />
-				<div className='introBox'>
-					<h1>Healthcare Evolution</h1>
-					<h3>
-						The healthcare industry is undergoing a digital evolution – with video communication playing a vital
-						role. Discover why a high-quality, easy-to-use video conferencing solution is essential for
-						telehealth.
-					</h3>
-					<h3>We are HIPAA-compliant telemedicine. </h3>
+				<NavBar />
+				<div className='introContainer'>
+					<div className='introBox'>
+						<h1>Healthcare Evolution</h1>
+						<h3>
+							The healthcare industry is undergoing a digital evolution – with video communication playing a
+							vital role. Discover why a high-quality, easy-to-use video conferencing solution is essential for
+							telehealth.
+						</h3>
+						<h3>We are HIPAA-compliant telemedicine. </h3>
+					</div>
 				</div>
 			</div>
 			<div className='about'>

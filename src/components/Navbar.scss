@@ -1,20 +1,23 @@
 nav {
+   background-color: var(--wt);
    border-color: var(--wt);
    display: grid;
-   width: 100vw;
-   padding-bottom: 2.5rem;
-   margin-right: 5rem;
+   width: 80vw;
+   margin: 0 auto;
+   padding: 0 2.5rem;
+   position: relative;
+   top: -11px;
    grid-template-rows: 5rem 10rem;
-   grid-template-columns: 40rem 2fr;
-   border-bottom: var(--pb) solid 8px;
+   grid-template-columns: 25rem 2fr;
+   border-bottom-right-radius: 2rem;
+   border-bottom-left-radius: 2rem;
+   
    
    .logoTop {
       width: 22rem;
-      position: relative;
-      top: 1.5rem;
       grid-row-start: 1;
       grid-row-end: 3;
-      justify-self: center;
+      justify-self: flex-start;
       align-self: center;
    }
    
@@ -23,12 +26,12 @@ nav {
       grid-template-columns: auto repeat(5, auto);
       align-items: center;
       justify-content: right;
-
+      
       .faIcon {
          width: 1.1rem;
          margin-right: 5px;
       }
-   
+      
       .button1 {
          text-align: center;
          color: var(--pb);
@@ -40,21 +43,18 @@ nav {
    
    .navBottom {
       display: grid;
-      grid-template-rows: 1fr 2fr;
+      grid-template-columns: repeat(5, auto);
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
       border-top: var(--sb) solid 2px;
-
+      
+      
+      
+      
       span {
          margin: 2rem;
       }
       
-      .button1 {
-         text-align: center;
-         color: var(--pb);
-         padding: 1rem 5rem;
-      }
-
       .button2 {
          background-color: var(--sb);
          color: var(--wt);

@@ -1,26 +1,27 @@
 nav {
+  background-color: var(--wt);
   border-color: var(--wt);
   display: -ms-grid;
   display: grid;
-  width: 100vw;
-  padding-bottom: 2.5rem;
-  margin-right: 5rem;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  position: relative;
+  top: -11px;
   -ms-grid-rows: 5rem 10rem;
       grid-template-rows: 5rem 10rem;
-  -ms-grid-columns: 40rem 2fr;
-      grid-template-columns: 40rem 2fr;
-  border-bottom: var(--pb) solid 8px;
+  -ms-grid-columns: 25rem 2fr;
+      grid-template-columns: 25rem 2fr;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }
 
 nav .logoTop {
   width: 22rem;
-  position: relative;
-  top: 1.5rem;
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 3;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: flex-start;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -54,25 +55,19 @@ nav .navTop .button1 {
 nav .navBottom {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 2fr;
-      grid-template-rows: 1fr 2fr;
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   border-top: var(--sb) solid 2px;
 }
 
 nav .navBottom span {
   margin: 2rem;
-}
-
-nav .navBottom .button1 {
-  text-align: center;
-  color: var(--pb);
-  padding: 1rem 5rem;
 }
 
 nav .navBottom .button2 {

@@ -37,16 +37,16 @@ function NavBar() {
 				</div>
 				<div className='navBottom'>
 					<span>Solutions for</span>
-					<div>
-						{navBottomLinks.map((data, index) => {
-							return (
-								<NavLink to={data.link} className='button2' key={index.link}>
-									{data.menu}
-									{index.menu}
-								</NavLink>
-							);
-						})}
-					</div>
+					{/* <div> */}
+					{navBottomLinks.map((data, index) => {
+						return (
+							<NavLink to={data.link} className='button2' key={index.link}>
+								{data.menu}
+								{index.menu}
+							</NavLink>
+						);
+					})}
+					{/* </div> */}
 				</div>
 			</nav>
 		</div>

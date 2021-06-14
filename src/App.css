@@ -3,6 +3,12 @@
   text-align: center;
   width: 100vw;
 }
+
+.jumbotron {
+  background: #1cb5e0;
+  background: linear-gradient(-143deg, #1cb5e0 0%, #10217d 100%);
+  margin-top: 0;
+}
 /* FONTS */
 /* Prompt Extra-light 200 */
 /* Prompt Extra-light Italic 200 */

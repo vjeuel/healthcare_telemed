@@ -1,6 +1,4 @@
 .contactContainer {
-  background: #1cb5e0;
-  background: linear-gradient(-143deg, #1cb5e0 0%, #10217d 100%);
   width: 100%;
   min-height: calc(100vh - 163px);
   height: auto;
