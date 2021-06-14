@@ -11,7 +11,9 @@ function NavBar() {
 	return (
 		<div>
 			<nav>
-				<img src={logo} className='logoTop' alt='logo'></img>
+				<NavLink to='/' className='logoTop'>
+					<img src={logo} alt='logo'></img>
+				</NavLink>
 				<div className='navTop'>
 					<a href='tel:18002355656' className='button1'>
 						<FontAwesomeIcon icon={faPhoneAlt} className='faIcon' />1 800-235-5656
@@ -24,7 +26,11 @@ function NavBar() {
 							</NavLink>
 						);
 					})}
-					<a href='https://healthcaretelemed.letstalk.video/' className='button1'>
+					<a
+						href='https://healthcaretelemed.letstalk.video/'
+						target='_blank'
+						rel='noopener noreferrer'
+						className='button1'>
 						<FontAwesomeIcon icon={faShieldAlt} className='faIcon' />
 						LOGIN
 					</a>
@@ -35,7 +41,8 @@ function NavBar() {
 						{navBottomLinks.map((data, index) => {
 							return (
 								<NavLink to={data.link} className='button2' key={index.link}>
-									{data.menu} {index.menu}
+									{data.menu}
+									{index.menu}
 								</NavLink>
 							);
 						})}

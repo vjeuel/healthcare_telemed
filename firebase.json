@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "healthcare-telemed",
     "public": "build",
     "ignore": [
       "firebase.json",
