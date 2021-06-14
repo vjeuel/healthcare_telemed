@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { firebase } from '../initFirebase';
+// import { firebase } from '../initFirebase';
+import emailjs from 'emailjs-com';
 //-------------------
 import './ContactForm.css';
 
-const db = firebase.database();
+// const db = firebase.database();
 
 function ContactForm() {
 	const [values, setValues] = useState({
@@ -43,31 +44,47 @@ function ContactForm() {
 		setValues({ ...values, message: event.target.value });
 	};
 
-	const handleSubmit = (event) => {
+	function sendEmail(event) {
 		event.preventDefault();
 		if (values.firstName && values.lastName && values.email && values.businessType && values.message) {
 			setValid(true);
 		}
 		setSubmitted(true);
-		const contactRef = db.ref('contacts');
-		const newContactRef = contactRef.push();
-		newContactRef.set({
-			firstName: values.firstName,
-			lastName: values.lastName,
-			phone: values.phone,
-			email: values.email,
-			businessType: values.businessType,
-			message: values.message,
-		});
+		emailjs.sendForm('service_xskellm', 'template_a7djgzv', event.target, 'user_Ok8ihHqm7lPdgKVBdzcVc').then(
+			(result) => {
+				console.log(result.text);
+			},
+			(error) => {
+				console.log(error.text);
+			}
+		);
+	}
 
-		db.ref('contacts').push(newContactRef.key);
-	};
+	// const handleSubmit = (event) => {
+	// 	event.preventDefault();
+	// 	if (values.firstName && values.lastName && values.email && values.businessType && values.message) {
+	// 		setValid(true);
+	// 	}
+	// 	setSubmitted(true);
+	// 	const contactRef = db.ref('contacts');
+	// 	const newContactRef = contactRef.push();
+	// 	newContactRef.set({
+	// 		firstName: values.firstName,
+	// 		lastName: values.lastName,
+	// 		phone: values.phone,
+	// 		email: values.email,
+	// 		businessType: values.businessType,
+	// 		message: values.message,
+	// 	});
+
+	// 	db.ref('contacts').push(newContactRef.key);
+	// };
 
 	return (
 		<div className='contactBox'>
 			<h3>Contact Form</h3>
 			{submitted && valid ? <div className='successMessage'>Success! Thank you for registering!</div> : null}
-			<form className='contactForm' onSubmit={handleSubmit}>
+			<form className='contactForm' onSubmit={sendEmail}>
 				<div className='formFieldBox'>
 					<input
 						value={values.firstName}
