@@ -1,11 +1,12 @@
 // Form component that goes to the Contact Us page and the Intro page
 
-.contactBox {
+.contactFormBox {
    background-color:  rgba(235, 237, 255, 0.75);
    height: auto;
    width: 50rem;
    padding: 2.5rem;
    border-radius: 2rem;
+   box-shadow: 0 0 10px 0px var(--pb);
 
    .successMessage {
       font-size: 1.25rem;
@@ -53,19 +54,19 @@
          
       }
 
-      button {
-         all: unset;
-         background-color: var(--pb);
-         color: var(--wt);
-         font-size: 1.5rem;
-         font-weight: 600;
-         letter-spacing: 1px;
-         width: 50%;
-         margin-top: 2rem;
-         padding: 1rem;
-         border-radius: 0.5rem;
-         cursor: pointer;
+      // button {
+      //    all: unset;
+      //    background-color: var(--pb);
+      //    color: var(--wt);
+      //    font-size: 1.5rem;
+      //    font-weight: 600;
+      //    letter-spacing: 1px;
+      //    width: 50%;
+      //    margin-top: 2rem;
+      //    padding: 1rem;
+      //    border-radius: 0.5rem;
+      //    cursor: pointer;
          
-      }
+      // }
    }
 }

@@ -7,13 +7,14 @@ nav {
   margin: 0 auto;
   padding: 0 2.5rem;
   position: relative;
-  top: -11px;
   -ms-grid-rows: 5rem 10rem;
       grid-template-rows: 5rem 10rem;
   -ms-grid-columns: 25rem 2fr;
       grid-template-columns: 25rem 2fr;
   border-bottom-right-radius: 2rem;
   border-bottom-left-radius: 2rem;
+  -webkit-box-shadow: 0 0 10px 0px var(--pb);
+          box-shadow: 0 0 10px 0px var(--pb);
 }
 
 nav .logoTop {
@@ -45,13 +46,6 @@ nav .navTop .faIcon {
   margin-right: 5px;
 }
 
-nav .navTop .button1 {
-  text-align: center;
-  color: var(--pb);
-  padding: 1rem 2rem;
-  border-left: var(--sb) solid 2px;
-}
-
 nav .navBottom {
   display: -ms-grid;
   display: grid;
@@ -68,13 +62,5 @@ nav .navBottom {
 
 nav .navBottom span {
   margin: 2rem;
-}
-
-nav .navBottom .button2 {
-  background-color: var(--sb);
-  color: var(--wt);
-  margin: 1rem;
-  padding: 1rem 2rem;
-  border-radius: 10px;
 }
 /*# sourceMappingURL=Navbar.css.map */

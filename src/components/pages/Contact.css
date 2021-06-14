@@ -1,9 +1,9 @@
 .contactContainer {
-  width: 60%;
+  width: 80%;
   min-height: calc(100vh - 163px);
   height: auto;
   margin: 0 auto;
-  padding: 2.5rem;
+  padding: 5rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -14,13 +14,15 @@
       -ms-flex-align: start;
           align-items: flex-start;
   justify-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 .contactContainer .contactBox {
-  margin: 2.5rem;
+  background-color: rgba(235, 237, 255, 0.75);
+  width: 50rem;
+  padding: 2.5rem;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 0 10px 0px var(--pb);
+          box-shadow: 0 0 10px 0px var(--pb);
 }
 
 .contactContainer h4 {
@@ -52,15 +54,36 @@
   color: var(--bl);
 }
 
+.contactContainer .contactGrid .button1 {
+  padding: 0;
+  border-left: none;
+}
+
 .contactContainer .faIconCircle {
   padding: 1rem;
   border: var(--sb) solid 2px;
   border-radius: 50%;
 }
 
+.contactContainer .faIconCircle:hover {
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: var(--sb);
+}
+
 .contactContainer .faIconCircle .faIcon {
   color: var(--pb);
   height: 2rem;
   width: 2rem;
+}
+
+.contactContainer .faIconCircle .faIcon:hover {
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: var(--wt);
 }
 /*# sourceMappingURL=Contact.css.map */

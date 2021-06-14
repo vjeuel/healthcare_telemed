@@ -25,19 +25,11 @@ function DmePhaLabBus() {
 								At Healthcare Telemed we have everything you need to grow your business. Our platform is{' '}
 								<strong style={{ color: 'var(--pb)' }}>safe, efficient, and HIPAA compliant.</strong>
 							</p>
-							<p
-								style={{
-									backgroundColor: 'var(--pb)',
-									color: 'var(--wt)',
-									width: '60%',
-									margin: '2rem auto',
-									padding: '1rem',
-									borderRadius: '20px',
-								}}>
+							<div style={{ width: '75%', margin: '2rem auto' }}>
 								<NavLink to='/contact'>
-									<p style={{ color: 'var(--wt)' }}>Contact us today !!</p>
+									<p className='button2'>Contact us today !!</p>
 								</NavLink>
-							</p>
+							</div>
 							<p>A representative will contact you to better service you.</p>
 						</div>
 						<div className='dmeImageBox'>

@@ -81,7 +81,7 @@ function ContactForm() {
 	// };
 
 	return (
-		<div className='contactBox'>
+		<div className='contactFormBox'>
 			<h3>Contact Form</h3>
 			{submitted && valid ? <div className='successMessage'>Success! Thank you for registering!</div> : null}
 			<form className='contactForm' onSubmit={sendEmail}>
@@ -187,7 +187,7 @@ function ContactForm() {
 						</span>
 					) : null}
 				</div>
-				<button className='button' type='submit'>
+				<button className='button3' type='submit'>
 					send message
 				</button>
 			</form>

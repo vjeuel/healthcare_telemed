@@ -11,6 +11,9 @@
   max-width: 100vw;
   width: 80%;
   margin: 0 auto;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 0 10px 0px var(--pb);
+          box-shadow: 0 0 10px 0px var(--pb);
 }
 
 .providers .providersBox .providersTextBox {
