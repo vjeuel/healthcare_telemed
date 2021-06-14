@@ -24,6 +24,21 @@
          p {
             margin-bottom: 0;
          }
+
+         .providersTextBoxLine {
+            border-bottom: var(--sb) solid 1px;
+            padding-bottom: 3rem;
+         }
+
+         .providersHighlight {
+            background-color: var(--pb);
+            color: var(--wt);
+            padding: 1rem;
+   
+            border-radius: 2rem;
+   
+   
+         }
       }
 
       .providersImageBox{
@@ -34,10 +49,7 @@
          border-bottom-right-radius: 2rem;
       }
            
-      .providersTextBoxLine {
-         border-bottom: var(--sb) solid 1px;
-         padding-bottom: 3rem;
-      }
+      
    }
 
    .providersContactContainer {

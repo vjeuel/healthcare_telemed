@@ -43,10 +43,9 @@ function Contact() {
 									technical support?
 								</p>
 								<p>
-									Please fill out the form below and click submit. A representative will respond to your
-									inquiry momentarily and in some cases where we are extremely busy, within 24 hours. We are
-									continuously working to ensure quality service. Thank you for visiting to make contact with
-									us today.
+									Please fill out the form and click send message. A representative will respond to your
+									inquiry momentarily. We are continuously working to ensure quality service. Thank you for
+									visiting to make contact with us today.
 								</p>
 							</div>
 						</div>

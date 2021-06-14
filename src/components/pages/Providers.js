@@ -15,7 +15,7 @@ function DmePhaLabBus() {
 							<h2>Telemedicine Visits</h2>
 							<p className='providersTextBoxLine'>
 								Securely and efficiently see patients via our integrated HIPAA-compliant telemedicine platform.
-								Perfect  for consults and post visits, telemedicine appointments with Healthcare Telemed , help
+								Perfect  for consults and post visits. Telemedicine appointments with Healthcare Telemedim, help
 								providers see more patients in less time and increase revenue at your practice.
 							</p>
 							<h2>Videoconferencing</h2>
@@ -43,7 +43,10 @@ function DmePhaLabBus() {
 								Grow your client base with our network of  businesses that will continually provide you with new
 								clientele.
 							</p>
-							<p>We provide access to the software platform for free to Providers !!! </p>
+							<p className='providersHighlight'>
+								We provide access to the software platform for{' '}
+								<strong style={{ fontSize: '2rem' }}>FREE</strong> to Providers !!!
+							</p>
 						</div>
 						<div className='providersImageBox'>
 							<img alt='' />
