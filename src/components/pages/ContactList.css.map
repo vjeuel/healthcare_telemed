@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACZ,gBAAgB,EAAE,UAAU;CAE9B",
+    "sources": [
+        "ContactList.scss"
+    ],
+    "names": [],
+    "file": "ContactList.css"
+}

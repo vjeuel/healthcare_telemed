@@ -171,7 +171,7 @@ function ContactForm() {
 					) : null}
 				</div>
 				<button className='button' type='submit'>
-					submit
+					send message
 				</button>
 			</form>
 		</div>

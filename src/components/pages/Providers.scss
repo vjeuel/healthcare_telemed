@@ -17,6 +17,15 @@
          padding: 5rem;
          border-top-left-radius: 2rem;
          border-bottom-left-radius: 2rem;
+
+         h2 {
+            margin-bottom: 0;
+            padding: 0;
+         }
+
+         p {
+            margin-bottom: 0;
+         }
       }
 
       .providersImageBox{
@@ -29,7 +38,7 @@
            
       .providersTextBoxLine {
          border-bottom: var(--sb) solid 1px;
-         padding: 3rem 0;
+         padding-bottom: 3rem;
       }
    }
 

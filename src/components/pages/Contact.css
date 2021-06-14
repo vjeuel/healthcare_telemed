@@ -16,9 +16,48 @@
   justify-items: center;
 }
 
-.contactContainer h3 {
+.contactContainer .contactBox {
+  margin: 2.5rem;
+}
+
+.contactContainer h4 {
+  text-align: left;
   margin: 0;
   margin-bottom: 1rem;
   padding: 0;
+}
+
+.contactContainer .contactGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  grid-gap: 3rem;
+  justify-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+.contactContainer .contactGrid p, .contactContainer .contactGrid a {
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+.contactContainer .contactGrid p {
+  color: var(--bl);
+}
+
+.contactContainer .faIconCircle {
+  padding: 1rem;
+  border: var(--sb) solid 2px;
+  border-radius: 50%;
+}
+
+.contactContainer .faIconCircle .faIcon {
+  color: var(--pb);
+  height: 2rem;
+  width: 2rem;
 }
 /*# sourceMappingURL=Contact.css.map */

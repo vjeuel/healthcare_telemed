@@ -22,6 +22,15 @@
   border-bottom-left-radius: 2rem;
 }
 
+.dme .dmeBox .dmeTextBox h2 {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.dme .dmeBox .dmeTextBox p {
+  margin: 0;
+}
+
 .dme .dmeBox .dmeImageBox {
   background: url("../img/john-schnobrich-FlPc9_VocJ4-unsplash.jpg");
   background-size: cover;
