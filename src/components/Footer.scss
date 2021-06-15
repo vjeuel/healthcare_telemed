@@ -12,7 +12,6 @@ footer {
       grid-gap: 2rem;
       justify-content: center;
       margin: 2rem;
-
       
       .faBrands {
          color: var(--sb);
@@ -20,15 +19,20 @@ footer {
          margin: 0 auto;
          padding: 0 2rem;
          height: 2.5rem;
+         outline: red solid 2px;
+         &:hover {
+            transition-timing-function: ease-in-out;
+            transition: 0.5s;
+            color: var(--pb);
       }
    }
-
+   
    p {
       font-size: 1.2rem;
       font-weight: 400;
       margin: 0;
    }
-
+   
    .faIcon {
       width: 1rem;
       margin-right: 0.5rem;

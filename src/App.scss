@@ -1,23 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;0,400;0,600;1,200;1,400&display=swap');
 @import './include_media_query.scss';
 
-:root {
-   --wt: #EBEDFF;
-   // rgb(235, 237, 255)
-   --pb: #10217D;
-   --lpb: #ABC8E2;
-   // rgb(171, 200, 226)
-   --sb: #1CB5E0;
-   --bl: #000000;
-   --rd: #D00000;
-   --lrd: #ff9495;
- 
-}
-
-* {
-   box-sizing: border-box;
-
-}
 
 .App {
    text-align: center;
