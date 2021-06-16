@@ -42,7 +42,9 @@ $breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 
          }
          @include media('>phone', '<=tablet') {
             width: 90%;
-
+         }
+         @include media('>tablet', '<=desktop') {
+            width: 80%;
          }
          
          
@@ -58,7 +60,9 @@ $breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 
             }
             @include media('>phone', '<=tablet') {
                font-size: 3rem;
-
+            }
+            @include media('>tablet', '<=desktop') {
+               font-size: 4rem;
             }
          }
          
@@ -71,7 +75,9 @@ $breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 
             }
             @include media('>phone', '<=tablet') {
                font-size: 2rem;
-               
+            }
+            @include media('>tablet', '<=desktop') {
+               font-size: 2.25rem;
             }
          }         
       }
@@ -84,13 +90,12 @@ $breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 
    border-top: var(--sb) solid 1rem;
    border-bottom: var(--lpb) solid 1rem;
    margin: 0 auto;
-   padding: 10rem 5%;
+   padding: 10rem 5rem;
    @include media ('<=phone') {
       padding: 2rem;
    }
    @include media('>phone', '<=tablet') {
       padding: 2rem;
-               
    }
    
    .aboutBox {
@@ -105,7 +110,13 @@ $breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 
       @include media('>phone', '<=tablet') {
          grid-template-columns: 1fr;
          grid-template-rows: 30rem 1fr;
-               
+         
+      }
+      @include media('>tablet', '<=desktop') {
+         width: 80%;
+         margin: 0 auto;
+         grid-template-columns: 1fr;
+         grid-template-rows: 30rem 1fr;
       }
       
       .aboutImageBox {
@@ -125,7 +136,12 @@ $breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 
             border-top-right-radius: 2rem;
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;  
-               
+         }
+         @include media('>tablet', '<=desktop') {
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;  
          }
       }
       
@@ -173,6 +189,25 @@ $breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 
                margin: 0;
             }
          }
+         @include media('>tablet', '<=desktop') {
+            font-size: 3rem;
+            padding: 2.5rem;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+   
+            h1 {
+               font-size: 3rem;
+               padding: 0;
+            }
+   
+            p {
+               font-size: 1.25rem;
+               padding: 2rem;
+               margin: 0;
+            }
+         }
          
          p {
             padding: 0;
@@ -193,7 +228,7 @@ $breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 
       width: 100%;
       height: auto;
       margin: 0 auto;
-      padding: 5rem 2rem;
+      padding: 10rem 5rem;
       display: grid;
       grid-template-rows: 1fr;
       align-items: center;

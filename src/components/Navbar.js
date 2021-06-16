@@ -2,6 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 import logo from './img/logo-horizontal.svg';
+import logoVertical from './img/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
@@ -12,7 +13,8 @@ function NavBar() {
 		<div>
 			<nav>
 				<NavLink to='/' className='logoTop'>
-					<img src={logo} alt='logo'></img>
+					<img src={logo} alt='logo' className='logoHorizontal'></img>
+					<img src={logoVertical} alt='logo' className='logoVertical'></img>
 				</NavLink>
 				<div className='navTop'>
 					<a href='tel:18002355656' className='button1'>

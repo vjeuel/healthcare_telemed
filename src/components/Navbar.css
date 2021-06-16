@@ -43,9 +43,15 @@ nav {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-gap: 2rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-items: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  nav {
+    -ms-grid-columns: 16rem 2fr;
+        grid-template-columns: 16rem 2fr;
+    width: 100vw;
   }
 }
 
@@ -69,6 +75,9 @@ nav .logoTop {
     -ms-grid-column-align: center;
         justify-self: center;
   }
+  nav .logoTop .logoVertical {
+    display: none;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -79,6 +88,24 @@ nav .logoTop {
     width: 18rem;
     -ms-grid-column-align: center;
         justify-self: center;
+  }
+  nav .logoTop .logoVertical {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  nav .logoTop {
+    width: 11rem;
+  }
+  nav .logoTop .logoHorizontal {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  nav .logoTop .logoVertical {
+    display: none;
   }
 }
 
@@ -110,6 +137,12 @@ nav .navTop {
   }
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+  nav .navTop .button1 {
+    border: 0;
+  }
+}
+
 nav .navTop .faIcon {
   width: 1.1rem;
   margin-right: 5px;
@@ -132,6 +165,21 @@ nav .navBottom {
 @media (max-width: 480px) {
   nav .navBottom {
     display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  nav .navBottom {
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: (auto)[4];
+        grid-template-columns: repeat(4, auto);
+  }
+  nav .navBottom span {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: -4;
+    grid-area: 1 / 5 / 1 / 1;
   }
 }
 

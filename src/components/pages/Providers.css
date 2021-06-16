@@ -1,9 +1,15 @@
 .providers {
   margin: 0 auto;
-  padding: 10rem 5%;
+  padding: 10rem 5rem;
 }
 
 @media (max-width: 480px) {
+  .providers {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
   .providers {
     padding: 2rem;
   }
@@ -25,6 +31,26 @@
 @media (max-width: 480px) {
   .providers .providersBox {
     width: 100%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 30rem;
+        grid-template-rows: 1fr 30rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .providers .providersBox {
+    width: 90%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 30rem;
+        grid-template-rows: 1fr 30rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .providers .providersBox {
+    width: 90%;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 30rem;
@@ -57,10 +83,46 @@
   }
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+  .providers .providersBox .providersTextBox {
+    padding: 2.5rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .providers .providersBox .providersTextBox h2 {
+    font-size: 3rem;
+  }
+  .providers .providersBox .providersTextBox p {
+    font-size: 1.25rem;
+    padding: 1rem;
+    margin: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .providers .providersBox .providersTextBox {
+    padding: 2.5rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .providers .providersBox .providersTextBox h2 {
+    font-size: 3rem;
+  }
+  .providers .providersBox .providersTextBox p {
+    font-size: 1.25rem;
+    padding: 1rem;
+    margin: 0;
+  }
+}
+
 .providers .providersBox .providersTextBox h2 {
   margin-bottom: 0;
   padding: 0;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .providers .providersBox .providersImageBox {
@@ -72,6 +134,24 @@
 }
 
 @media (max-width: 480px) {
+  .providers .providersBox .providersImageBox {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .providers .providersBox .providersImageBox {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
   .providers .providersBox .providersImageBox {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -108,6 +188,12 @@
 }
 
 @media (max-width: 480px) {
+  .providers .providersContactContainer {
+    padding: 2rem 0;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
   .providers .providersContactContainer {
     padding: 2rem 0;
   }

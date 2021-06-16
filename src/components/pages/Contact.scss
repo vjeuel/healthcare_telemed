@@ -19,6 +19,20 @@ $breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 
       padding: 2.5rem 0;    
       grid-gap: 2.5rem;
    }
+   @include media('>phone', '<=tablet') { 
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, auto);
+      width: 90%;
+      padding: 2.5rem 0;    
+      grid-gap: 2.5rem;  
+   }
+   @include media('>tablet', '<=desktop') {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, auto);
+      width: 80%;
+      padding: 2.5rem 0;    
+      grid-gap: 2.5rem;  
+   }
 
    .contactBox {
       background-color:  rgba(235, 237, 255, 0.75);
@@ -28,8 +42,11 @@ $breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 
       box-shadow: 0 0 10px 0px var(--pb);
       @include media ('<=phone') {
          width: 100%;
-         padding: 2rem;
-         
+         padding: 2rem;  
+      }
+      @include media('>phone', '<=tablet') { 
+         width: 90%;
+         padding: 2rem;  
       }
    }
    

@@ -14,7 +14,6 @@ nav {
    border-bottom-right-radius: 2rem;
    border-bottom-left-radius: 2rem;
    box-shadow: 0 0 10px 0px var(--pb);
-   
    @include media('<=phone') {
       width: 100vw;
       height: auto;
@@ -24,7 +23,6 @@ nav {
       grid-gap: 2rem;
       justify-content: center;
    }
-
    @include media('>phone', '<=tablet') {
       width: 100vw;
       height: auto;
@@ -32,7 +30,12 @@ nav {
       grid-template-rows: repeat(3, auto);
       grid-template-columns: 1fr;
       grid-gap: 2rem;
-      justify-content: center;
+      justify-items: center;
+   }
+   @include media('>tablet', '<=desktop') {
+      grid-template-columns: 16rem 2fr;
+      width: 100vw;
+
    }
    
    .logoTop {
@@ -46,13 +49,33 @@ nav {
          grid-row-end: 1;
          width: 18rem;
          justify-self: center;
+         
+         .logoVertical {
+            display: none;
+         }
       }
-
+      
       @include media('>phone', '<=tablet') {
          grid-row-start: 1;
          grid-row-end: 1;
          width: 18rem;
          justify-self: center;
+         
+         .logoVertical {
+            display: none;
+         }
+      }
+      @include media('>tablet', '<=desktop') {
+         width: 11rem;
+         
+         .logoHorizontal {
+            display: none;
+         }
+      }
+      @include media('>desktop') {
+         .logoVertical {
+            display: none;
+         }
       }
    }
    
@@ -73,13 +96,9 @@ nav {
       }
 
       @include media('>phone', '<=tablet') { 
-         // grid-template-columns: 1fr 1fr;
-         // grid-template-rows: auto repeat(5, auto);
-         // justify-content: center;
-         
-         // .button1 {
-         //    border: 0;
-         // }
+         .button1 {
+            border: 0;
+         }
       }
       
       .faIcon {
@@ -96,6 +115,16 @@ nav {
       border-top: var(--sb) solid 2px;
       @include media ('<=phone') {
          display: none;
+      }
+      @include media('>phone', '<=tablet') { 
+         grid-template-rows: 1fr 1fr;
+         grid-template-columns: repeat(4, auto);
+
+
+         span {
+            grid-area: 1 / 5 / 1 / 1;
+         }
+         
       }
      
       span {
@@ -120,8 +149,6 @@ nav {
             color: var(--pb);
             margin: 0.5rem 1rem;
             border: var(--pb) solid 2px;
-
-
          }
       }
       

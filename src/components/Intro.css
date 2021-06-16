@@ -67,6 +67,12 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .jumbotronPic .introContainer .introBox {
+    width: 80%;
+  }
+}
+
 .jumbotronPic .introContainer .introBox h1 {
   background-color: var(--pb);
   color: var(--wt);
@@ -88,6 +94,12 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .jumbotronPic .introContainer .introBox h1 {
+    font-size: 4rem;
+  }
+}
+
 .jumbotronPic .introContainer .introBox h3 {
   padding: 0;
   padding-top: 2rem;
@@ -106,13 +118,19 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .jumbotronPic .introContainer .introBox h3 {
+    font-size: 2.25rem;
+  }
+}
+
 .about {
   background: #1cb5e0;
   background: linear-gradient(-143deg, #1cb5e0 0%, #10217d 100%);
   border-top: var(--sb) solid 1rem;
   border-bottom: var(--lpb) solid 1rem;
   margin: 0 auto;
-  padding: 10rem 5%;
+  padding: 10rem 5rem;
 }
 
 @media (max-width: 480px) {
@@ -154,6 +172,17 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about .aboutBox {
+    width: 80%;
+    margin: 0 auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 30rem 1fr;
+        grid-template-rows: 30rem 1fr;
+  }
+}
+
 .about .aboutBox .aboutImageBox {
   background: url(./img/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg);
   background-size: cover;
@@ -172,6 +201,15 @@
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+  .about .aboutBox .aboutImageBox {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
   .about .aboutBox .aboutImageBox {
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
@@ -227,6 +265,26 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about .aboutBox .aboutTextBox {
+    font-size: 3rem;
+    padding: 2.5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+  .about .aboutBox .aboutTextBox h1 {
+    font-size: 3rem;
+    padding: 0;
+  }
+  .about .aboutBox .aboutTextBox p {
+    font-size: 1.25rem;
+    padding: 2rem;
+    margin: 0;
+  }
+}
+
 .about .aboutBox .aboutTextBox p {
   padding: 0;
   margin: 0;
@@ -243,7 +301,7 @@
   width: 100%;
   height: auto;
   margin: 0 auto;
-  padding: 5rem 2rem;
+  padding: 10rem 5rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr;
