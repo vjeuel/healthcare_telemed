@@ -27,8 +27,11 @@ function Footer() {
 			</div>
 			<p>
 				<FontAwesomeIcon icon={faCopyright} className='faIcon'></FontAwesomeIcon>2021 by Healthcare Telemed. All
-				rights reserved. Created by{' '}
-				<a href='https://grafk.design/' target='_blank' rel='noopener noreferrer'>
+				rights reserved.
+			</p>
+			<p>
+				Created by{' '}
+				<a href='https://grafk.design/' target='_blank' rel='noopener noreferrer' className='grafk'>
 					Grafk Design
 				</a>
 			</p>

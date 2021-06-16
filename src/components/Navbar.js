@@ -37,7 +37,6 @@ function NavBar() {
 				</div>
 				<div className='navBottom'>
 					<span>Solutions for</span>
-					{/* <div> */}
 					{navBottomLinks.map((data, index) => {
 						return (
 							<NavLink to={data.link} className='button2' key={index.link}>
@@ -46,7 +45,17 @@ function NavBar() {
 							</NavLink>
 						);
 					})}
-					{/* </div> */}
+				</div>
+				<div className='navBottomMobile'>
+					<span>Solutions for</span>
+					{navBottomMobileLinks.map((data, index) => {
+						return (
+							<NavLink to={data.link} className='button2' key={index.link}>
+								{data.menu}
+								{index.menu}
+							</NavLink>
+						);
+					})}
 				</div>
 			</nav>
 		</div>
@@ -77,6 +86,17 @@ const navBottomLinks = [
 	},
 	{
 		menu: 'Labs',
+		link: '/dmePhaLabBus',
+	},
+	{
+		menu: 'Providers',
+		link: '/providers',
+	},
+];
+
+const navBottomMobileLinks = [
+	{
+		menu: 'DME / Pharmacies / Labs',
 		link: '/dmePhaLabBus',
 	},
 	{

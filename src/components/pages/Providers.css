@@ -3,6 +3,12 @@
   padding: 10rem 5%;
 }
 
+@media (max-width: 320px) {
+  .providers {
+    padding: 2rem;
+  }
+}
+
 .providers .providersBox {
   display: -ms-grid;
   display: grid;
@@ -16,6 +22,16 @@
           box-shadow: 0 0 10px 0px var(--pb);
 }
 
+@media (max-width: 320px) {
+  .providers .providersBox {
+    width: 100%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 30rem;
+        grid-template-rows: 1fr 30rem;
+  }
+}
+
 .providers .providersBox .providersTextBox {
   background-color: rgba(235, 237, 255, 0.8);
   padding: 5rem;
@@ -23,25 +39,33 @@
   border-bottom-left-radius: 2rem;
 }
 
+@media (max-width: 320px) {
+  .providers .providersBox .providersTextBox {
+    padding: 2.5rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .providers .providersBox .providersTextBox h2 {
+    font-size: 3rem;
+  }
+  .providers .providersBox .providersTextBox p {
+    font-size: 1.25rem;
+    padding: 2rem;
+    margin: 0;
+  }
+}
+
 .providers .providersBox .providersTextBox h2 {
   margin-bottom: 0;
   padding: 0;
+  padding-bottom: 2rem;
 }
 
 .providers .providersBox .providersTextBox p {
-  margin-bottom: 0;
-}
-
-.providers .providersBox .providersTextBox .providersTextBoxLine {
-  border-bottom: var(--sb) solid 1px;
-  padding-bottom: 3rem;
-}
-
-.providers .providersBox .providersTextBox .providersHighlight {
-  background-color: var(--pb);
-  color: var(--wt);
-  padding: 1rem;
-  border-radius: 2rem;
+  padding: 0;
+  margin: 0;
 }
 
 .providers .providersBox .providersImageBox {
@@ -50,6 +74,28 @@
   background-position: center;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
+}
+
+@media (max-width: 320px) {
+  .providers .providersBox .providersImageBox {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+}
+
+.providers .providersBox .providersLine {
+  width: 75%;
+  margin: 2rem auto;
+  border-bottom: var(--sb) solid 1px;
+}
+
+.providers .providersBox .providersHighlight {
+  background-color: var(--pb);
+  color: var(--wt);
+  padding: 1rem;
+  border-radius: 2rem;
 }
 
 .providers .providersContactContainer {
@@ -65,5 +111,11 @@
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
+}
+
+@media (max-width: 320px) {
+  .providers .providersContactContainer {
+    padding: 2rem 0;
+  }
 }
 /*# sourceMappingURL=Providers.css.map */

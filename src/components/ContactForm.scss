@@ -1,4 +1,5 @@
 // Form component that goes to the Contact Us page and the Intro page
+@import "../includeMediaQuery.scss";
 
 .contactFormBox {
    background-color:  rgba(235, 237, 255, 0.75);
@@ -7,66 +8,62 @@
    padding: 2.5rem;
    border-radius: 2rem;
    box-shadow: 0 0 10px 0px var(--pb);
-
-   .successMessage {
-      font-size: 1.25rem;
-      font-weight: 400;
-      letter-spacing: 1px;
-      background-color: green;
-      color: var(--wt);
-      margin: 1rem 2.5rem;
-      padding: 1rem;
-      border-radius: 0.5rem;
+   @include media('<=phone') {
+      width: 100%;
    }
-   
-   .contactForm {
       
-      .formFieldBox {
-         display: grid;
-         justify-items: center;
-
-         .errorMessage {
-            font-size: 1.25rem;
-            font-weight: 400;
-            letter-spacing: 1px;
-            display: block;
-            color: var(--rd);
-            width: 60%;
-            margin: 0 2.5rem;
-            padding: 1rem;
-            border-radius: 0.5rem;
-         }
-         
-         .formField {
-            font-size: 1.5rem;
-            width: 90%;
-            margin: 1rem 0;
-            padding: 1rem;
-            border: none;
-            border-radius: 0.5rem;
-            box-shadow: 0 0 2px 2px var(--sb);
-         }
-         
-         .formMessage {
-            height: 10rem;
-         }
-
-         
+      .successMessage {
+         font-size: 1.25rem;
+         font-weight: 400;
+         letter-spacing: 1px;
+         background-color: green;
+         color: var(--wt);
+         margin: 1rem 2.5rem;
+         padding: 1rem;
+         border-radius: 0.5rem;
       }
-
-      // button {
-      //    all: unset;
-      //    background-color: var(--pb);
-      //    color: var(--wt);
-      //    font-size: 1.5rem;
-      //    font-weight: 600;
-      //    letter-spacing: 1px;
-      //    width: 50%;
-      //    margin-top: 2rem;
-      //    padding: 1rem;
-      //    border-radius: 0.5rem;
-      //    cursor: pointer;
+      
+      .contactForm {
          
-      // }
+         .formFieldBox {
+            display: grid;
+            justify-items: center;
+            
+            .errorMessage {
+               font-size: 1.25rem;
+               font-weight: 400;
+               letter-spacing: 1px;
+               display: block;
+               color: var(--rd);
+               width: 60%;
+               margin: 0 2.5rem;
+               padding: 1rem;
+               border-radius: 0.5rem;
+            }
+         
+            .formField {
+               font-size: 1.5rem;
+               width: 90%;
+               margin: 1rem 0;
+               padding: 1rem;
+               border: none;
+               border-radius: 0.5rem;
+               box-shadow: 0 0 2px 2px var(--sb);
+               @include media ('<=phone') {
+                  font-size: 1.25rem;
+               }
+            }
+         
+            .formMessage {
+               height: 10rem;
+            }
+
+         }
+
+         .button3 {
+            @include media ('<=phone') {
+               width: 80%;
+            }
+         }
    }
 }

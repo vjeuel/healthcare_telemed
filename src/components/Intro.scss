@@ -1,19 +1,26 @@
+@import "../includeMediaQuery.scss";
+
 .jumbotronPic {
    background: url(./img/online-marketing-hIgeoQjS_iE-unsplash.jpg);
    background-size: cover;
    background-position: center;
    margin-top: -11px;
 
+   
    .introContainer {
       min-height: 100%;
       height: calc(100vh - 163px);
       width: 100%;
       display: grid;
       grid-template-rows: 2fr 1fr 1fr;
-      
+      @include media ('<=phone') {
+         height: auto;
+         padding: 2rem 0;
+         grid-template-rows: 1fr;
+      }      
       .introImage {
          margin: auto;
-      grid-area: 1 / 1 / 4 / 4;
+         grid-area: 1 / 1 / 4 / 4;
    }
    
       .introBox {
@@ -23,6 +30,9 @@
          padding: 2.5rem 2.5rem 3rem;
          grid-area: 2 / 2 / 3 / 3;
          border-radius: 2rem;
+         @include media ('<=phone') {
+            width: 90%;
+         }
          
          h1 {
             background-color: var(--pb);
@@ -31,14 +41,19 @@
             margin: 0;
             padding: 2rem;
             border-radius: 2rem;
+            @include media ('<=phone') {
+               font-size: 3rem;
+            }
          }
          
          h3 {
             padding: 0;
             padding-top: 2rem;
             margin: 0;
-         }
-         
+            @include media ('<=phone') {
+               font-size: 2rem;
+            }
+         }         
       }
    }
 }
@@ -50,12 +65,19 @@
    border-bottom: var(--lpb) solid 1rem;
    margin: 0 auto;
    padding: 10rem 5%;
+   @include media ('<=phone') {
+      padding: 2rem;
+   }
    
    .aboutBox {
       display: grid;
-      grid-template-columns: 1fr 60rem;
+      grid-template-columns: 1fr 40rem;
       max-width: 100vw;
       width: 100%;
+      @include media ('<=phone') {
+         grid-template-columns: 1fr;
+         grid-template-rows: 30rem 1fr;
+      }
       
       .aboutImageBox {
          background: url(./img/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg);
@@ -63,6 +85,13 @@
          background-position: center;
          border-top-left-radius: 2rem;
          border-bottom-left-radius: 2rem;
+         @include media ('<=phone') {
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            
+         }
       }
       
       .aboutTextBox {
@@ -71,11 +100,36 @@
          padding: 5rem;
          border-top-right-radius: 2rem;
          border-bottom-right-radius: 2rem;
+         @include media ('<=phone') {
+            font-size: 3rem;
+            padding: 2.5rem;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+
+            h1 {
+               font-size: 3rem;
+               padding: 0;
+            }
+
+            p {
+               font-size: 1.25rem;
+               padding: 2rem;
+               margin: 0;
+            }
+         }
+
+         p {
+            padding: 0;
+            margin: 0;
+         }
       }
       
-      .aboutTextBoxLine {
+      .aboutLine {
+         width: 75%;
+         margin: 2rem auto;
          border-bottom: var(--sb) solid 1px;
-         padding: 3rem 0;
       }
    }
 }  
@@ -85,7 +139,7 @@
       width: 100%;
       height: auto;
       margin: 0 auto;
-      padding: 5rem;
+      padding: 5rem 2rem;
       display: grid;
       grid-template-rows: 1fr;
       align-items: center;

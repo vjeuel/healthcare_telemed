@@ -1,19 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;0,400;0,600;1,200;1,400&display=swap");
-:root {
-  --wt: #EBEDFF;
-  --pb: #10217D;
-  --lpb: #ABC8E2;
-  --sb: #1CB5E0;
-  --bl: #000000;
-  --rd: #D00000;
-  --lrd: #ff9495;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .App {
   text-align: center;
 }
@@ -35,9 +20,14 @@
 
 html {
   max-width: 100vw;
+  width: 100vw;
   background-color: var(--wt);
   font-size: 10px;
   font-family: 'Prompt', sans-serif;
+}
+
+html h1, html h2, html h3, html h4, html p, html a, html span {
+  letter-spacing: 1px;
 }
 
 html h1 {
@@ -69,23 +59,20 @@ html h4 {
 html p {
   font-weight: 400;
   font-size: 1.75rem;
-  letter-spacing: 1px;
   line-height: 1.5;
   text-decoration: none;
-  margin-top: 2rem;
+  padding: 1rem 0;
 }
 
 html a {
   font-weight: 400;
   font-size: 1.3rem;
-  letter-spacing: 1px;
   text-decoration: none;
 }
 
 html span {
   font-weight: 400;
   font-size: 1.5rem;
-  letter-spacing: 1px;
 }
 
 .button1 {

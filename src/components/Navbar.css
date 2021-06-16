@@ -17,6 +17,22 @@ nav {
           box-shadow: 0 0 10px 0px var(--pb);
 }
 
+@media (max-width: 320px) {
+  nav {
+    width: 100vw;
+    height: auto;
+    padding: 2rem;
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 nav .logoTop {
   width: 22rem;
   -ms-grid-row: 1;
@@ -26,6 +42,17 @@ nav .logoTop {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+@media (max-width: 320px) {
+  nav .logoTop {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+    width: 18rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
 }
 
 nav .navTop {
@@ -39,6 +66,21 @@ nav .navTop {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
+}
+
+@media (max-width: 320px) {
+  nav .navTop {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto (auto)[5];
+        grid-template-rows: auto repeat(5, auto);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav .navTop .button1 {
+    border: 0;
+  }
 }
 
 nav .navTop .faIcon {
@@ -60,7 +102,43 @@ nav .navBottom {
   border-top: var(--sb) solid 2px;
 }
 
+@media (max-width: 320px) {
+  nav .navBottom {
+    display: none;
+  }
+}
+
 nav .navBottom span {
   margin: 2rem;
+}
+
+@media (min-width: 321px) {
+  nav .navBottomMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  nav .navBottomMobile {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav .navBottomMobile .button2 {
+    background-color: var(--wt);
+    color: var(--pb);
+    margin: 0.5rem 1rem;
+    border: var(--pb) solid 2px;
+  }
+}
+
+nav .navBottomMobile span {
+  margin: 1rem;
 }
 /*# sourceMappingURL=Navbar.css.map */

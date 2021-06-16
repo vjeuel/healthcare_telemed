@@ -1,3 +1,5 @@
+@import "../includeMediaQuery.scss";
+
 nav {
    background-color: var(--wt);
    border-color: var(--wt);
@@ -11,6 +13,15 @@ nav {
    border-bottom-right-radius: 2rem;
    border-bottom-left-radius: 2rem;
    box-shadow: 0 0 10px 0px var(--pb);
+   @include media('<=phone') {
+      width: 100vw;
+      height: auto;
+      padding: 2rem;
+      grid-template-rows: repeat(3, auto);
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+      justify-content: center;
+   }
    
    .logoTop {
       width: 22rem;
@@ -18,6 +29,12 @@ nav {
       grid-row-end: 3;
       justify-self: flex-start;
       align-self: center;
+      @include media('<=phone') {
+         grid-row-start: 1;
+         grid-row-end: 1;
+         width: 18rem;
+         justify-self: center;
+      }
    }
    
    .navTop {
@@ -25,6 +42,16 @@ nav {
       grid-template-columns: auto repeat(5, auto);
       align-items: center;
       justify-content: right;
+      @include media('<=phone') {
+         grid-template-columns: 1fr;
+         grid-template-rows: auto repeat(5, auto);
+         justify-content: center;
+         
+         .button1 {
+            border: 0;
+         }
+
+      }
       
       .faIcon {
          width: 1.1rem;
@@ -38,9 +65,39 @@ nav {
       align-items: center;
       justify-content: flex-end;
       border-top: var(--sb) solid 2px;
-      
+      @include media ('<=phone') {
+         display: none;
+      }
+     
       span {
          margin: 2rem;
+      }
+   
+   }
+
+   .navBottomMobile {
+      @include media('>phone') {
+      display: none;
+      }
+
+      @include media('<=phone') {
+         display: grid;
+         grid-template-columns: auto;
+         grid-template-rows: repeat(3, auto);
+         justify-content: center;
+
+         .button2 {
+            background-color: var(--wt);
+            color: var(--pb);
+            margin: 0.5rem 1rem;
+            border: var(--pb) solid 2px;
+
+
+         }
+      }
+      
+      span {
+         margin: 1rem;
       }
    }
 }

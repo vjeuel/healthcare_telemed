@@ -3,6 +3,12 @@
   padding: 10rem 5%;
 }
 
+@media (max-width: 320px) {
+  .dme {
+    padding: 2rem;
+  }
+}
+
 .dme .dmeBox {
   display: -ms-grid;
   display: grid;
@@ -16,6 +22,16 @@
           box-shadow: 0 0 10px 0px var(--pb);
 }
 
+@media (max-width: 320px) {
+  .dme .dmeBox {
+    width: 100%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 30rem;
+        grid-template-rows: 1fr 30rem;
+  }
+}
+
 .dme .dmeBox .dmeTextBox {
   background-color: rgba(235, 237, 255, 0.8);
   padding: 5rem;
@@ -23,12 +39,32 @@
   border-bottom-left-radius: 2rem;
 }
 
+@media (max-width: 320px) {
+  .dme .dmeBox .dmeTextBox {
+    padding: 2.5rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .dme .dmeBox .dmeTextBox h2 {
+    font-size: 3rem;
+  }
+  .dme .dmeBox .dmeTextBox p {
+    font-size: 1.25rem;
+    padding: 2rem;
+    margin: 0;
+  }
+}
+
 .dme .dmeBox .dmeTextBox h2 {
   margin-bottom: 0;
   padding: 0;
+  padding-bottom: 2rem;
 }
 
 .dme .dmeBox .dmeTextBox p {
+  padding: 0;
   margin: 0;
 }
 
@@ -40,9 +76,19 @@
   border-bottom-right-radius: 2rem;
 }
 
-.dme .dmeBox .dmeTextBoxLine {
+@media (max-width: 320px) {
+  .dme .dmeBox .dmeImageBox {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+}
+
+.dme .dmeBox .dmeLine {
+  width: 75%;
+  margin: 2rem auto;
   border-bottom: var(--sb) solid 1px;
-  padding: 3rem 0;
 }
 
 .dme .dmeContactContainer {
@@ -58,5 +104,11 @@
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
+}
+
+@media (max-width: 320px) {
+  .dme .dmeContactContainer {
+    padding: 2rem 0;
+  }
 }
 /*# sourceMappingURL=DmePhaLabBus.css.map */

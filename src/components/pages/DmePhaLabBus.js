@@ -16,16 +16,18 @@ function DmePhaLabBus() {
 							<h2>
 								We have solutions for a<br /> diversity of businesses​
 							</h2>
-							<p className='dmeTextBoxLine'>
+							<p>
 								Once you’ve completed the application process, we’ll partner to complete one-time telemedicine,
 								Website training, and clinical protocol education for the telehealth opportunities that
 								interests you.
 							</p>
-							<p className='dmeTextBoxLine'>
+							<div className='dmeLine'></div>
+							<p>
 								At Healthcare Telemed we have everything you need to grow your business. Our platform is{' '}
 								<strong style={{ color: 'var(--pb)' }}>safe, efficient, and HIPAA compliant.</strong>
 							</p>
-							<div style={{ width: '75%', margin: '2rem auto' }}>
+							<div className='dmeLine'></div>
+							<div className='button2'>
 								<NavLink to='/contact'>
 									<p className='button2'>Contact us today !!</p>
 								</NavLink>

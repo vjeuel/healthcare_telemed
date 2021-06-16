@@ -1,5 +1,6 @@
 footer {
-  padding: 3rem;
+  height: auto;
+  padding: 3rem 1rem;
   border-top: var(--pb) solid 1rem;
 }
 
@@ -19,6 +20,13 @@ footer .socialMedia {
   margin: 2rem;
 }
 
+@media (max-width: 320px) {
+  footer .socialMedia {
+    -ms-grid-columns: (8rem)[3];
+        grid-template-columns: repeat(3, 8rem);
+  }
+}
+
 footer .socialMedia .faBrands {
   color: var(--sb);
   width: 100%;
@@ -27,14 +35,35 @@ footer .socialMedia .faBrands {
   height: 2.5rem;
 }
 
+footer .socialMedia .faBrands:hover {
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: var(--pb);
+}
+
 footer p {
   font-size: 1.2rem;
   font-weight: 400;
   margin: 0;
+  padding: 0;
 }
 
 footer .faIcon {
   width: 1rem;
   margin-right: 0.5rem;
+}
+
+footer .grafk {
+  color: var(--sb);
+}
+
+footer .grafk:hover {
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: var(--pb);
 }
 /*# sourceMappingURL=Footer.css.map */

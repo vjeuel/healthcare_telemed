@@ -29,7 +29,7 @@ function Intro() {
 					</div>
 					<div className='aboutTextBox'>
 						<h1>About</h1>
-						<p className='aboutTextBoxLine'>
+						<p>
 							Learn how healthcare providers are using the latest video calling software to{' '}
 							<strong style={{ color: 'var(--pb)' }}>make telehealth a reality</strong> and improve the quality,
 							equity, and affordability of healthcare worldwide. With skyrocketing costs, regulatory changes, and
@@ -38,7 +38,8 @@ function Intro() {
 							<strong style={{ color: 'var(--pb)' }}>improve patient care and provider efficiency</strong>, thus
 							reducing costs.
 						</p>
-						<p className='aboutTextBoxLine'>
+						<div className='aboutLine'></div>
+						<p>
 							In addition to reducing overhead costs per visit, telehealth is{' '}
 							<strong style={{ color: 'var(--pb)' }}>
 								less time-consuming, both for the patient and provider
@@ -51,10 +52,12 @@ function Intro() {
 							. Telehealth can also provide a competitive advantage, attracting and retaining more patients with
 							new models of care.
 						</p>
-						<p className='aboutTextBoxLine'>
+						<div className='aboutLine'></div>
+						<p>
 							With a telehealth visit, the doctor comes to the patient on their phone, laptop, or another digital
 							device.
 						</p>
+						<div className='aboutLine'></div>
 						<p>
 							We are a <strong style={{ color: 'var(--pb)' }}>HIPAA-compliant</strong> telemedicine software.
 						</p>
