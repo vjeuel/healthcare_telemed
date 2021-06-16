@@ -20,7 +20,7 @@ footer .socialMedia {
   margin: 2rem;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   footer .socialMedia {
     -ms-grid-columns: (8rem)[3];
         grid-template-columns: repeat(3, 8rem);

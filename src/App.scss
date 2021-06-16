@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;0,400;0,600;1,200;1,400&display=swap');
 @import "./includeMediaQuery.scss";
 
+$breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 1920px);
 
 .App {
    text-align: center;

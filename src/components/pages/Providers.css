@@ -3,7 +3,7 @@
   padding: 10rem 5%;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .providers {
     padding: 2rem;
   }
@@ -22,7 +22,7 @@
           box-shadow: 0 0 10px 0px var(--pb);
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .providers .providersBox {
     width: 100%;
     -ms-grid-columns: 1fr;
@@ -39,7 +39,7 @@
   border-bottom-left-radius: 2rem;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .providers .providersBox .providersTextBox {
     padding: 2.5rem;
     border-top-left-radius: 2rem;
@@ -52,7 +52,7 @@
   }
   .providers .providersBox .providersTextBox p {
     font-size: 1.25rem;
-    padding: 2rem;
+    padding: 1rem;
     margin: 0;
   }
 }
@@ -63,11 +63,6 @@
   padding-bottom: 2rem;
 }
 
-.providers .providersBox .providersTextBox p {
-  padding: 0;
-  margin: 0;
-}
-
 .providers .providersBox .providersImageBox {
   background: url("../img/national-cancer-institute-gO-iULv-qbU-unsplash.jpg");
   background-size: cover;
@@ -76,7 +71,7 @@
   border-bottom-right-radius: 2rem;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .providers .providersBox .providersImageBox {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -94,7 +89,6 @@
 .providers .providersBox .providersHighlight {
   background-color: var(--pb);
   color: var(--wt);
-  padding: 1rem;
   border-radius: 2rem;
 }
 
@@ -113,7 +107,7 @@
   justify-items: center;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .providers .providersContactContainer {
     padding: 2rem 0;
   }

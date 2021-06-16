@@ -14,6 +14,12 @@
   }
 }
 
+@media (min-width: 321px) and (max-width: 768px) {
+  .contactFormBox {
+    width: 100%;
+  }
+}
+
 .contactFormBox .successMessage {
   font-size: 1.25rem;
   font-weight: 400;
@@ -55,6 +61,12 @@
 }
 
 @media (max-width: 320px) {
+  .contactFormBox .contactForm .formFieldBox .formField {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
   .contactFormBox .contactForm .formFieldBox .formField {
     font-size: 1.25rem;
   }

@@ -1,4 +1,5 @@
 @import "../includeMediaQuery.scss";
+$breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 1920px);
 
 footer {
    height: auto;

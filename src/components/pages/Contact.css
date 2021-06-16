@@ -15,7 +15,7 @@
   justify-items: center;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .contactContainer {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -36,7 +36,7 @@
           box-shadow: 0 0 10px 0px var(--pb);
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .contactContainer .contactBox {
     width: 100%;
     padding: 2rem;
@@ -63,7 +63,7 @@
   margin-bottom: 3rem;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .contactContainer .contactGrid {
     grid-gap: 2rem;
   }
@@ -97,7 +97,7 @@
   background-color: var(--sb);
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .contactContainer .faIconCircle {
     padding: 0.75rem;
   }

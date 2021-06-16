@@ -3,7 +3,7 @@
   padding: 10rem 5%;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .dme {
     padding: 2rem;
   }
@@ -22,7 +22,7 @@
           box-shadow: 0 0 10px 0px var(--pb);
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .dme .dmeBox {
     width: 100%;
     -ms-grid-columns: 1fr;
@@ -39,7 +39,7 @@
   border-bottom-left-radius: 2rem;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .dme .dmeBox .dmeTextBox {
     padding: 2.5rem;
     border-top-left-radius: 2rem;
@@ -76,7 +76,7 @@
   border-bottom-right-radius: 2rem;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .dme .dmeBox .dmeImageBox {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -106,7 +106,7 @@
   justify-items: center;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .dme .dmeContactContainer {
     padding: 2rem 0;
   }
