@@ -5,7 +5,7 @@ nav {
    background-color: var(--wt);
    border-color: var(--wt);
    display: grid;
-   width: 80vw;
+   width: 80%;
    margin: 0 auto;
    padding: 0 2.5rem;
    position: relative;
@@ -31,11 +31,24 @@ nav {
       grid-template-columns: 1fr;
       grid-gap: 2rem;
       justify-items: center;
+      
+      .navTopMobile {
+         display: none;
+      }
    }
    @include media('>tablet', '<=desktop') {
       grid-template-columns: 16rem 2fr;
       width: 100vw;
-
+      
+      .navTopMobile {
+         display: none;
+      }
+   }
+   
+   @include media('>desktop') {
+      .navTopMobile {
+         display: none;
+      }
    }
    
    .logoTop {
@@ -93,6 +106,7 @@ nav {
             border: 0;
          }
 
+         display: none;
       }
 
       @include media('>phone', '<=tablet') { 
@@ -105,6 +119,20 @@ nav {
          width: 1.1rem;
          margin-right: 5px;
       }      
+   }
+
+   .navTopMobile {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      .faIcon {
+         width: 3rem;
+         height: 3rem;
+      }
+
+      .button1 {
+         border: none;
+      }
    }
    
    .navBottom {
@@ -143,13 +171,6 @@ nav {
          grid-template-columns: auto;
          grid-template-rows: repeat(3, auto);
          justify-content: center;
-
-         .button2 {
-            background-color: var(--wt);
-            color: var(--pb);
-            margin: 0.5rem 1rem;
-            border: var(--pb) solid 2px;
-         }
       }
       
       span {

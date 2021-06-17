@@ -3,7 +3,7 @@ nav {
   border-color: var(--wt);
   display: -ms-grid;
   display: grid;
-  width: 80vw;
+  width: 80%;
   margin: 0 auto;
   padding: 0 2.5rem;
   position: relative;
@@ -45,6 +45,9 @@ nav {
     grid-gap: 2rem;
     justify-items: center;
   }
+  nav .navTopMobile {
+    display: none;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -52,6 +55,15 @@ nav {
     -ms-grid-columns: 16rem 2fr;
         grid-template-columns: 16rem 2fr;
     width: 100vw;
+  }
+  nav .navTopMobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  nav .navTopMobile {
+    display: none;
   }
 }
 
@@ -131,6 +143,7 @@ nav .navTop {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    display: none;
   }
   nav .navTop .button1 {
     border: 0;
@@ -146,6 +159,22 @@ nav .navTop {
 nav .navTop .faIcon {
   width: 1.1rem;
   margin-right: 5px;
+}
+
+nav .navTopMobile {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+nav .navTopMobile .faIcon {
+  width: 3rem;
+  height: 3rem;
+}
+
+nav .navTopMobile .button1 {
+  border: none;
 }
 
 nav .navBottom {
@@ -204,12 +233,6 @@ nav .navBottom span {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  nav .navBottomMobile .button2 {
-    background-color: var(--wt);
-    color: var(--pb);
-    margin: 0.5rem 1rem;
-    border: var(--pb) solid 2px;
   }
 }
 

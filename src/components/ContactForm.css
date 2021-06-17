@@ -2,19 +2,20 @@
   background-color: rgba(235, 237, 255, 0.75);
   height: auto;
   width: 50rem;
+  margin: 0 auto;
   padding: 2.5rem;
   border-radius: 2rem;
   -webkit-box-shadow: 0 0 10px 0px var(--pb);
           box-shadow: 0 0 10px 0px var(--pb);
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .contactFormBox {
     width: 100%;
   }
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .contactFormBox {
     width: 90%;
   }
@@ -60,13 +61,7 @@
           box-shadow: 0 0 2px 2px var(--sb);
 }
 
-@media (max-width: 320px) {
-  .contactFormBox .contactForm .formFieldBox .formField {
-    font-size: 1.25rem;
-  }
-}
-
-@media (min-width: 321px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .contactFormBox .contactForm .formFieldBox .formField {
     font-size: 1.25rem;
   }
@@ -76,7 +71,7 @@
   height: 10rem;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .contactFormBox .contactForm .button3 {
     width: 80%;
   }

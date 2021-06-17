@@ -65,7 +65,9 @@ function Intro() {
 				</div>
 			</div>
 			<section className='introContactContainer'>
-				<ContactForm />
+				<div className='introContactBox'>
+					<ContactForm />
+				</div>
 			</section>
 			<Footer />
 		</div>

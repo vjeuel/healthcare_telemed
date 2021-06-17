@@ -3,11 +3,11 @@
   min-height: calc(100vh - 163px);
   height: auto;
   margin: 0 auto;
-  padding: 5rem;
+  padding: 5rem 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
   grid-gap: 5rem;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -15,19 +15,7 @@
   justify-items: center;
 }
 
-@media (max-width: 480px) {
-  .contactContainer {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: (auto)[2];
-        grid-template-rows: repeat(2, auto);
-    width: 100%;
-    padding: 2.5rem 0;
-    grid-gap: 2.5rem;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .contactContainer {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -53,7 +41,7 @@
 
 .contactContainer .contactBox {
   background-color: rgba(235, 237, 255, 0.75);
-  width: 50rem;
+  width: auto;
   padding: 2.5rem;
   border-radius: 2rem;
   -webkit-box-shadow: 0 0 10px 0px var(--pb);

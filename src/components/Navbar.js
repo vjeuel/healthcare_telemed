@@ -17,9 +17,6 @@ function NavBar() {
 					<img src={logoVertical} alt='logo' className='logoVertical'></img>
 				</NavLink>
 				<div className='navTop'>
-					<a href='tel:18002355656' className='button1'>
-						<FontAwesomeIcon icon={faPhoneAlt} className='faIcon' />1 800-235-5656
-					</a>
 					{navTopLinks.map((data, index) => {
 						return (
 							<NavLink to={data.link} className='button1' key={index.link}>
@@ -35,6 +32,22 @@ function NavBar() {
 						className='button1'>
 						<FontAwesomeIcon icon={faShieldAlt} className='faIcon' />
 						LOGIN
+					</a>
+				</div>
+				<div className='navTopMobile'>
+					{navTopLinks.map((data, index) => {
+						return (
+							<NavLink to={data.link} className='button1' key={index.link}>
+								<FontAwesomeIcon icon={data.icon} className='faIcon' key={index.icon} />
+							</NavLink>
+						);
+					})}
+					<a
+						href='https://healthcaretelemed.letstalk.video/'
+						target='_blank'
+						rel='noopener noreferrer'
+						className='button1'>
+						<FontAwesomeIcon icon={faShieldAlt} className='faIcon' />
 					</a>
 				</div>
 				<div className='navBottom'>

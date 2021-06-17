@@ -15,16 +15,7 @@
       grid-template-rows: 2fr 1fr 1fr;
 }
 
-@media (max-width: 480px) {
-  .jumbotronPic .introContainer {
-    height: auto;
-    padding: 2rem 0;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 1024px) {
   .jumbotronPic .introContainer {
     height: auto;
     padding: 2rem 0;
@@ -55,13 +46,7 @@
   border-radius: 2rem;
 }
 
-@media (max-width: 480px) {
-  .jumbotronPic .introContainer .introBox {
-    width: 90%;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .jumbotronPic .introContainer .introBox {
     width: 90%;
   }
@@ -82,13 +67,7 @@
   border-radius: 2rem;
 }
 
-@media (max-width: 480px) {
-  .jumbotronPic .introContainer .introBox h1 {
-    font-size: 3rem;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .jumbotronPic .introContainer .introBox h1 {
     font-size: 3rem;
   }
@@ -106,13 +85,7 @@
   margin: 0;
 }
 
-@media (max-width: 480px) {
-  .jumbotronPic .introContainer .introBox h3 {
-    font-size: 2rem;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .jumbotronPic .introContainer .introBox h3 {
     font-size: 2rem;
   }
@@ -130,18 +103,12 @@
   border-top: var(--sb) solid 1rem;
   border-bottom: var(--lpb) solid 1rem;
   margin: 0 auto;
-  padding: 10rem 5rem;
+  padding: 10rem 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .about {
-    padding: 2rem;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .about {
-    padding: 2rem;
+    padding: 2rem 0;
   }
 }
 
@@ -151,20 +118,14 @@
   -ms-grid-columns: 1fr 40rem;
       grid-template-columns: 1fr 40rem;
   max-width: 100vw;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .about .aboutBox {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 30rem 1fr;
-        grid-template-rows: 30rem 1fr;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .about .aboutBox {
+    width: 90%;
+    margin: 0 auto;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 30rem 1fr;
@@ -191,16 +152,7 @@
   border-bottom-left-radius: 2rem;
 }
 
-@media (max-width: 480px) {
-  .about .aboutBox .aboutImageBox {
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .about .aboutBox .aboutImageBox {
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
@@ -225,47 +177,7 @@
   border-bottom-right-radius: 2rem;
 }
 
-@media (max-width: 480px) {
-  .about .aboutBox .aboutTextBox {
-    font-size: 3rem;
-    padding: 2.5rem;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-  }
-  .about .aboutBox .aboutTextBox h1 {
-    font-size: 3rem;
-    padding: 0;
-  }
-  .about .aboutBox .aboutTextBox p {
-    font-size: 1.25rem;
-    padding: 2rem;
-    margin: 0;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .about .aboutBox .aboutTextBox {
-    font-size: 3rem;
-    padding: 2.5rem;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-  }
-  .about .aboutBox .aboutTextBox h1 {
-    font-size: 3rem;
-    padding: 0;
-  }
-  .about .aboutBox .aboutTextBox p {
-    font-size: 1.25rem;
-    padding: 2rem;
-    margin: 0;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .about .aboutBox .aboutTextBox {
     font-size: 3rem;
     padding: 2.5rem;
@@ -310,5 +222,16 @@
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
+}
+
+@media (max-width: 768px) {
+  .introContactContainer {
+    padding: 5rem 0;
+  }
+}
+
+.introContactContainer .introContactBox {
+  width: 80%;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=Intro.css.map */

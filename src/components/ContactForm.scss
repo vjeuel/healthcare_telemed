@@ -1,11 +1,12 @@
 // Form component that goes to the Contact Us page and the Intro page
 @import "../includeMediaQuery.scss";
-// $breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 1920px);
+$breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 1920px);
 
 .contactFormBox {
    background-color:  rgba(235, 237, 255, 0.75);
    height: auto;
    width: 50rem;
+   margin: 0 auto;
    padding: 2.5rem;
    border-radius: 2rem;
    box-shadow: 0 0 10px 0px var(--pb);
@@ -54,10 +55,7 @@
                border: none;
                border-radius: 0.5rem;
                box-shadow: 0 0 2px 2px var(--sb);
-               @include media ('<=phone') {
-                  font-size: 1.25rem;
-               }
-               @include media('>phone', '<=tablet') {
+               @include media('<=tablet') {
                   font-size: 1.25rem;
                
                }
