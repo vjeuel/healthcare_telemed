@@ -31,24 +31,10 @@ nav {
       grid-template-columns: 1fr;
       grid-gap: 2rem;
       justify-items: center;
-      
-      .navTopMobile {
-         display: none;
-      }
    }
    @include media('>tablet', '<=desktop') {
       grid-template-columns: 16rem 2fr;
       width: 100vw;
-      
-      .navTopMobile {
-         display: none;
-      }
-   }
-   
-   @include media('>desktop') {
-      .navTopMobile {
-         display: none;
-      }
    }
    
    .logoTop {
@@ -132,6 +118,10 @@ nav {
 
       .button1 {
          border: none;
+      }
+
+      @include media('>phone') {
+         display: none;
       }
    }
    

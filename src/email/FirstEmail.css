@@ -1,0 +1,57 @@
+.emailContainer {
+  background-color: #EBEDFF;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-rows: (auto)[6];
+      grid-template-rows: repeat(6, auto);
+  max-width: 1024px;
+  width: 768;
+  padding: 40px 40px;
+}
+
+.emailContainer .logo {
+  width: 120px;
+  margin: 0 auto 30px;
+}
+
+.emailContainer .photoTextBox {
+  background-color: #10217D;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.emailContainer .photoTextBox .photo1 {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.emailContainer .photoTextBox h2, .emailContainer .photoTextBox p {
+  color: #EBEDFF;
+  padding: 0;
+}
+
+.emailContainer h1, .emailContainer h2, .emailContainer p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.emailContainer h1 {
+  background-color: #10217D;
+  color: #EBEDFF;
+  font-size: 40px;
+  width: auto;
+  margin: 0 auto;
+  padding: 20px 40px;
+  border-radius: 20px;
+}
+
+.emailContainer h2 {
+  font-size: 30px;
+  padding: 0;
+}
+
+.emailContainer p {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+/*# sourceMappingURL=FirstEmail.css.map */

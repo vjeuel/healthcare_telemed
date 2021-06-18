@@ -6,12 +6,11 @@
   padding: 5rem 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[2];
-      grid-template-columns: repeat(2, auto);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   grid-gap: 5rem;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   justify-items: center;
 }
 
@@ -42,6 +41,7 @@
 .contactContainer .contactBox {
   background-color: rgba(235, 237, 255, 0.75);
   width: auto;
+  height: 100%;
   padding: 2.5rem;
   border-radius: 2rem;
   -webkit-box-shadow: 0 0 10px 0px var(--pb);

@@ -8,9 +8,9 @@ $breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 
    margin: 0 auto;
    padding: 5rem 0;
    display: grid;
-   grid-template-columns: repeat(2, auto);
+   grid-template-columns: repeat(2, 1fr);
    grid-gap: 5rem;
-   align-items: flex-start;
+   align-content: flex-start;
    justify-items: center;
    @include media('<=tablet') { 
       grid-template-columns: 1fr;
@@ -30,6 +30,7 @@ $breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 
    .contactBox {
       background-color:  rgba(235, 237, 255, 0.75);
       width: auto;
+      height: 100%;
       padding: 2.5rem;
       border-radius: 2rem;
       box-shadow: 0 0 10px 0px var(--pb);

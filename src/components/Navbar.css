@@ -45,9 +45,6 @@ nav {
     grid-gap: 2rem;
     justify-items: center;
   }
-  nav .navTopMobile {
-    display: none;
-  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -55,15 +52,6 @@ nav {
     -ms-grid-columns: 16rem 2fr;
         grid-template-columns: 16rem 2fr;
     width: 100vw;
-  }
-  nav .navTopMobile {
-    display: none;
-  }
-}
-
-@media (min-width: 1025px) {
-  nav .navTopMobile {
-    display: none;
   }
 }
 
@@ -175,6 +163,12 @@ nav .navTopMobile .faIcon {
 
 nav .navTopMobile .button1 {
   border: none;
+}
+
+@media (min-width: 481px) {
+  nav .navTopMobile {
+    display: none;
+  }
 }
 
 nav .navBottom {

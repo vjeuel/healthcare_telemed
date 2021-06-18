@@ -19,11 +19,11 @@ function Contact() {
 					<div className='contactBox'>
 						<h3>Contact Information</h3>
 						<div className='contactGrid'>
-							<a href='tel:18002355656' className='faIconCircle'>
+							<a href='tel:18008235857' className='faIconCircle'>
 								<FontAwesomeIcon icon={faPhoneAlt} className='faIcon' />
 							</a>
-							<a href='tel:18002355656' className='button1'>
-								1 800-235-5656
+							<a href='tel:18008235857' className='button1'>
+								1 800-823-5857
 							</a>
 						</div>
 						<div className='contactGrid'>

@@ -1,0 +1,65 @@
+// $wt: #EBEDFF;
+//    // rgb(235, 237, 255)
+// $pb: #10217D;
+// $lpb: #ABC8E2;
+//    // rgb(171, 200, 226)
+// $sb: #1CB5E0;
+// $bl: #000000;
+// $rd: #D00000;
+// $lrd: #ff9495;
+
+.emailContainer {
+   background-color: #EBEDFF;
+   display: grid;
+   grid-gap: 30px;
+   grid-template-rows: repeat(6, auto);
+   max-width: 1024px;
+   width: 768;
+   padding: 40px 40px;
+
+   .logo {
+      width: 120px;
+      margin: 0 auto 30px;
+   }
+
+   .photoTextBox {
+      background-color: #10217D;
+      
+      border-radius: 20px;
+      padding: 20px;
+      
+      .photo1 {
+         width: 100%;
+         border-radius: 20px;
+      }
+
+      h2, p {
+         color: #EBEDFF;
+         padding: 0;
+      }
+   }
+   
+   h1,h2,p {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+
+   h1 {
+      background-color: #10217D;
+      color: #EBEDFF;
+      font-size: 40px;
+      width: auto;
+      margin: 0 auto;
+      padding: 20px 40px;
+      border-radius: 20px;
+   }
+
+   h2 {
+      font-size: 30px;
+      padding: 0;
+    }
+   
+   p {
+      font-size: 16px;
+      padding-bottom: 20px;
+    }
+}

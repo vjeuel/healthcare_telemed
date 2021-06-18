@@ -1,8 +1,28 @@
 .jumbotronPic {
   background: url(./img/online-marketing-hIgeoQjS_iE-unsplash.jpg);
   background-size: cover;
-  background-position: center;
-  margin-top: -11px;
+  background-position: top center;
+}
+
+@media (max-width: 480px) {
+  .jumbotronPic {
+    background: url(./img/pexels-tima-miroshnichenko-5452293.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    background-position-y: 28rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .jumbotronPic {
+    background-position-y: 28rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .jumbotronPic {
+    background-position-y: 14rem;
+  }
 }
 
 .jumbotronPic .introContainer {
@@ -22,15 +42,6 @@
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
   }
-}
-
-.jumbotronPic .introContainer .introImage {
-  margin: auto;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: 1 / 1 / 4 / 4;
 }
 
 .jumbotronPic .introContainer .introBox {
@@ -145,11 +156,19 @@
 }
 
 .about .aboutBox .aboutImageBox {
-  background: url(./img/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg);
+  background: url(./img/pexels-tima-miroshnichenko-5452201.jpg);
   background-size: cover;
   background-position: center;
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
+}
+
+@media (max-width: 1023px) {
+  .about .aboutBox .aboutImageBox {
+    background: url(./img/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -208,6 +227,24 @@
   border-bottom: var(--sb) solid 1px;
 }
 
+@media (min-width: 1025px) {
+  .navNonJumbotron {
+    display: none;
+  }
+}
+
+.nonJumbotronPic {
+  background: url(./img/online-marketing-hIgeoQjS_iE-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 1025px) {
+  .nonJumbotronPic {
+    display: none;
+  }
+}
+
 .introContactContainer {
   background: var(--lpb);
   width: 100%;
@@ -224,6 +261,13 @@
   justify-items: center;
 }
 
+@media (max-width: 480px) {
+  .introContactContainer {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .introContactContainer {
     padding: 5rem 0;
@@ -231,7 +275,14 @@
 }
 
 .introContactContainer .introContactBox {
-  width: 80%;
+  max-width: 60rem;
+  width: 100%;
   margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .introContactContainer .introContactBox {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=Intro.css.map */

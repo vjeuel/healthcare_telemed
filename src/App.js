@@ -7,6 +7,7 @@ import Contact from './components/pages/Contact';
 import ApplyNow from './components/pages/ApplyNow';
 import DmePhaLabBus from './components/pages/DmePhaLabBus.js';
 import Providers from './components/pages/Providers';
+import FirstEmail from './email/FirstEmail';
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 					<Route path='/applyNow' component={withRouter(ApplyNow)} />
 					<Route path='/dmePhaLabBus' component={withRouter(DmePhaLabBus)} />
 					<Route path='/providers' component={withRouter(Providers)} />
+					<Route path='/firstEmail' component={withRouter(FirstEmail)} />
 				</Switch>
 			</div>
 		</Router>

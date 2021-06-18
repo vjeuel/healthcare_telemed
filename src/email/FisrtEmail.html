@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.emailContainer {
+				background-color: #ebedff;
+				display: grid;
+				grid-gap: 30px;
+				grid-template-rows: repeat(6, auto);
+				max-width: 1024px;
+				width: 768;
+				padding: 40px 40px;
+			}
+
+			.emailContainer .logo {
+				width: 120px;
+				margin: 0 auto 30px;
+			}
+
+			.emailContainer .photoTextBox {
+				background-color: #10217d;
+				border-radius: 20px;
+				padding: 20px;
+			}
+
+			.emailContainer .photoTextBox .photo1 {
+				width: 100%;
+				border-radius: 20px;
+			}
+
+			.emailContainer .photoTextBox h2,
+			.emailContainer .photoTextBox p {
+				color: #ebedff;
+				padding: 0;
+			}
+
+			.emailContainer h1,
+			.emailContainer h2,
+			.emailContainer p {
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+			}
+
+			.emailContainer h1 {
+				background-color: #10217d;
+				color: #ebedff;
+				font-size: 40px;
+				width: auto;
+				margin: 0 auto;
+				padding: 20px 40px;
+				border-radius: 20px;
+			}
+
+			.emailContainer h2 {
+				font-size: 30px;
+				padding: 0;
+			}
+
+			.emailContainer p {
+				font-size: 16px;
+				padding-bottom: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<section className="logo">
+			<img src="" />
+		</section>
+		<h1>Healthcare Evolution</h1>
+		<div>
+			<h2>Telemedicine Visits</h2>
+			<p>
+				Securely and efficiently see patients via our integrated HIPAA-compliant telemedicine platform. Perfect for
+				consults and post visits, telemedicine appointments with{' '}
+				<strong>Healthcare Telemed</strong>, help providers see more patients in less time and increase revenue at
+				your practice.
+			</p>
+		</div>
+		<div className="photoTextBox">
+			<img src="" className="photo1" />
+			<h2>Videoconferencing</h2>
+			<p>
+				The most commonly reimbursed form of telemedicine is videoconferencing. In order to qualify as “live video”
+				across all states, real-time video and audio must be present, and the quality must be similar to that of an
+				in-person encounter.
+			</p>
+		</div>
+	</body>
+</html>

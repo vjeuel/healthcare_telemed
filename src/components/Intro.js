@@ -8,7 +8,6 @@ function Intro() {
 	return (
 		<div>
 			<div className='jumbotronPic'>
-				<img className='introImage' alt='' />
 				<NavBar />
 				<div className='introContainer'>
 					<div className='introBox'>
