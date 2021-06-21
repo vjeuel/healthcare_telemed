@@ -156,19 +156,11 @@
 }
 
 .about .aboutBox .aboutImageBox {
-  background: url(./img/pexels-tima-miroshnichenko-5452201.jpg);
+  background: url(./img/iStock-1039473936-Tiny.jpg);
   background-size: cover;
   background-position: center;
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
-}
-
-@media (max-width: 1023px) {
-  .about .aboutBox .aboutImageBox {
-    background: url(./img/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-  }
 }
 
 @media (max-width: 768px) {

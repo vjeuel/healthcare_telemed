@@ -68,7 +68,7 @@
 }
 
 .dme .dmeBox .dmeImageBox {
-  background: url("../img/john-schnobrich-FlPc9_VocJ4-unsplash.jpg");
+  background: url("../img/iStock-1179482344-Tiny.jpg");
   background-size: cover;
   background-position: center;
   border-bottom-left-radius: 2rem;
@@ -82,7 +82,7 @@
 }
 
 .dme .dmeContactContainer {
-  width: 100%;
+  width: 80rem;
   height: auto;
   margin: 0 auto;
   padding: 5rem;

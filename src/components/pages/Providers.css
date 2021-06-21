@@ -63,7 +63,7 @@
 }
 
 .providers .providersBox .providersImageBox {
-  background: url("../img/doctoroncomputer.jpg");
+  background: url("../img/iStock-1189304032-Tiny.jpg");
   background-size: cover;
   background-position: center;
   border-bottom-left-radius: 2rem;
@@ -83,7 +83,7 @@
 }
 
 .providers .providersContactContainer {
-  width: 100%;
+  width: 60rem;
   height: auto;
   margin: 0 auto;
   padding: 5rem;
