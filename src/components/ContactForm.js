@@ -44,6 +44,7 @@ function ContactForm() {
 		setValues({ ...values, message: event.target.value });
 	};
 
+	// Sending emails thru emailjs
 	function sendEmail(event) {
 		event.preventDefault();
 		if (values.firstName && values.lastName && values.email && values.businessType && values.message) {
