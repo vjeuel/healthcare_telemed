@@ -1,8 +1,8 @@
 import React from 'react';
 import './Navbar.css';
 import { NavLink } from 'react-router-dom';
-import logo from './img/logo-horizontal.svg';
-import logoVertical from './img/logo.svg';
+import logo from '../img/logo-horizontal.svg';
+import logoVertical from '../img/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { faHome } from '@fortawesome/free-solid-svg-icons';

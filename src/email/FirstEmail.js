@@ -2,8 +2,8 @@ import React from 'react';
 import Footer from '../components/Footer';
 import './FirstEmail.css';
 // ---------------------
-import logoVertical from '../components/img/logo.svg';
-import doctor from '../components/img/doctorComputerCropped.jpg';
+import logoVertical from '../img/logo.svg';
+import doctor from '../img/doctorComputerCropped.jpg';
 
 function FirstEmail() {
 	return (

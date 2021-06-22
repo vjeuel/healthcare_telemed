@@ -2,11 +2,11 @@
 $breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 1920px);
 
 .jumbotronPic {
-   background: url(./img/online-marketing-hIgeoQjS_iE-unsplash.jpg);
+   background: url(../img/online-marketing-hIgeoQjS_iE-unsplash.jpg);
    background-size: cover;
    background-position: top center;
    @include media('<=phone') {
-      background: url(./img/pexels-tima-miroshnichenko-5452293.jpg);
+      background: url(../img/pexels-tima-miroshnichenko-5452293.jpg);
       background-size: cover;
       background-position: bottom center;
       background-position-y: 28rem;
@@ -107,7 +107,7 @@ $breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 
       }
       
       .aboutImageBox {
-         background: url(./img/iStock-1039473936-Tiny.jpg);
+         background: url(../img/iStock-1039473936-Tiny.jpg);
          background-size: cover;
          background-position: center;
          border-top-left-radius: 2rem;
@@ -172,7 +172,7 @@ $breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 
 }
 
 .nonJumbotronPic {
-   background: url(./img/online-marketing-hIgeoQjS_iE-unsplash.jpg);
+   background: url(../img/online-marketing-hIgeoQjS_iE-unsplash.jpg);
    background-size: cover;
    background-position: center;
    @include media('>desktop') {

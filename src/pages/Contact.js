@@ -1,8 +1,8 @@
 import React from 'react';
 //-------------------
-import NavBar from '../../components/Navbar';
-import Footer from '../../components/Footer';
-import ContactForm from '../ContactForm';
+import NavBar from '../components/Navbar';
+import Footer from '../components/Footer';
+import ContactForm from '../components/ContactForm';
 import './Contact.css';
 //-------------------
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

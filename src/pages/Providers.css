@@ -1,21 +1,21 @@
-.dme {
+.providers {
   margin: 0 auto;
   padding: 10rem 0;
 }
 
 @media (max-width: 768px) {
-  .dme {
+  .providers {
     padding: 2rem 0;
   }
 }
 
-.dme .dmeBox {
+.providers .providersBox {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 50rem;
-      grid-template-rows: 1fr 50rem;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 80rem;
+      grid-template-rows: 1fr 80rem;
   max-width: 100vw;
   width: 80%;
   margin: 0 auto 5rem;
@@ -25,18 +25,22 @@
 }
 
 @media (max-width: 768px) {
-  .dme .dmeBox {
+  .providers .providersBox {
+    -ms-grid-rows: 1fr 60rem;
+        grid-template-rows: 1fr 60rem;
     width: 90%;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .dme .dmeBox {
+  .providers .providersBox {
+    -ms-grid-rows: 1fr 60rem;
+        grid-template-rows: 1fr 60rem;
     width: 80%;
   }
 }
 
-.dme .dmeBox .dmeTextBox {
+.providers .providersBox .providersTextBox {
   background-color: rgba(235, 237, 255, 0.8);
   padding: 5rem;
   border-top-left-radius: 2rem;
@@ -44,45 +48,52 @@
 }
 
 @media (max-width: 1024px) {
-  .dme .dmeBox .dmeTextBox {
+  .providers .providersBox .providersTextBox {
     padding: 2.5rem;
   }
-  .dme .dmeBox .dmeTextBox h2 {
+  .providers .providersBox .providersTextBox h2 {
     font-size: 3rem;
   }
-  .dme .dmeBox .dmeTextBox p {
+  .providers .providersBox .providersTextBox p {
     font-size: 1.25rem;
-    padding: 2rem;
+    padding: 1rem;
     margin: 0;
   }
 }
 
-.dme .dmeBox .dmeTextBox h2 {
+.providers .providersBox .providersTextBox h2 {
   margin: 0 0 2rem;
   padding: 0 0 1rem;
 }
 
-.dme .dmeBox .dmeTextBox p {
-  padding: 0;
-  margin: 0;
-}
-
-.dme .dmeBox .dmeImageBox {
-  background: url("../img/iStock-1179482344-Tiny.jpg");
+.providers .providersBox .providersImageBox {
+  background: url("../img/iStock-1189304032-Tiny.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top right;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }
 
-.dme .dmeBox .dmeLine {
+@media (max-width: 480px) {
+  .providers .providersBox .providersImageBox {
+    background-position-x: -45rem;
+  }
+}
+
+.providers .providersBox .providersLine {
   width: 75%;
   margin: 2rem auto;
   border-bottom: var(--sb) solid 1px;
 }
 
-.dme .dmeContactContainer {
-  width: 80rem;
+.providers .providersBox .providersHighlight {
+  background-color: var(--pb);
+  color: var(--wt);
+  border-radius: 2rem;
+}
+
+.providers .providersContactContainer {
+  width: 60rem;
   height: auto;
   margin: 0 auto;
   padding: 5rem;
@@ -97,16 +108,16 @@
 }
 
 @media (max-width: 768px) {
-  .dme .dmeContactContainer {
+  .providers .providersContactContainer {
     width: 90%;
     padding: 2rem 0;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .dme .dmeContactContainer {
+  .providers .providersContactContainer {
     width: 80%;
     padding: 2rem 0;
   }
 }
-/*# sourceMappingURL=DmePhaLabBus.css.map */
+/*# sourceMappingURL=Providers.css.map */

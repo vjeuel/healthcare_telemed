@@ -1,12 +1,12 @@
 .jumbotronPic {
-  background: url(./img/online-marketing-hIgeoQjS_iE-unsplash.jpg);
+  background: url(../img/online-marketing-hIgeoQjS_iE-unsplash.jpg);
   background-size: cover;
   background-position: top center;
 }
 
 @media (max-width: 480px) {
   .jumbotronPic {
-    background: url(./img/pexels-tima-miroshnichenko-5452293.jpg);
+    background: url(../img/pexels-tima-miroshnichenko-5452293.jpg);
     background-size: cover;
     background-position: bottom center;
     background-position-y: 28rem;
@@ -156,7 +156,7 @@
 }
 
 .about .aboutBox .aboutImageBox {
-  background: url(./img/iStock-1039473936-Tiny.jpg);
+  background: url(../img/iStock-1039473936-Tiny.jpg);
   background-size: cover;
   background-position: center;
   border-top-left-radius: 2rem;
@@ -226,7 +226,7 @@
 }
 
 .nonJumbotronPic {
-  background: url(./img/online-marketing-hIgeoQjS_iE-unsplash.jpg);
+  background: url(../img/online-marketing-hIgeoQjS_iE-unsplash.jpg);
   background-size: cover;
   background-position: center;
 }

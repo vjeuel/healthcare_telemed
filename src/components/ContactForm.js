@@ -79,10 +79,10 @@ function ContactForm() {
 	// 	});
 
 	// 	db.ref('contacts').push(newContactRef.key);
-	// };
+	// };   
 
 	return (
-		<div className='contactFormBox'>
+      <div className='contactFormBox'>
 			<h3>Contact Form</h3>
 			{submitted && valid ? <div className='successMessage'>Success! Thank you for registering!</div> : null}
 			<form className='contactForm' onSubmit={sendEmail}>

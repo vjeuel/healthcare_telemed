@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import '../pages/DmePhaLabBus.css';
-import ContactForm from '../ContactForm';
+import ContactForm from '../components/ContactForm';
 
 function DmePhaLabBus() {
 	return (

@@ -3,10 +3,10 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route, withRouter } from 'react-router-dom';
 import Intro from './components/Intro';
 // --------
-import Contact from './components/pages/Contact';
-import ApplyNow from './components/pages/ApplyNow';
-import DmePhaLabBus from './components/pages/DmePhaLabBus.js';
-import Providers from './components/pages/Providers';
+import Contact from './pages/Contact';
+import ApplyNow from './pages/ApplyNow';
+import DmePhaLabBus from './pages/DmePhaLabBus.js';
+import Providers from './pages/Providers';
 import FirstEmail from './email/FirstEmail';
 
 function App() {

@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
-import '../pages/Providers.css';
-import ContactForm from '../ContactForm';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import './Providers.css';
+import ContactForm from '../components/ContactForm';
 
 function DmePhaLabBus() {
 	return (
@@ -15,7 +15,7 @@ function DmePhaLabBus() {
 							<h2>Telemedicine Visits</h2>
 							<p className='providersTextBoxLine'>
 								Securely and efficiently see patients via our integrated HIPAA-compliant telemedicine platform.
-								Perfect  for consults and post visits. Telemedicine appointments with Healthcare Telemedim, help
+								Perfect  for consults and post visits. Telemedicine appointments with Healthcare Telemed, help
 								providers see more patients in less time and increase revenue at your practice.
 							</p>
 							<div className='providersLine'></div>
