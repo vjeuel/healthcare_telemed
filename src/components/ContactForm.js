@@ -44,6 +44,8 @@ function ContactForm() {
 		setValues({ ...values, message: event.target.value });
 	};
 
+   const [disable, setDisable] = React.useState(false);
+
 	// Sending emails thru emailjs
 	function sendEmail(event) {
 		event.preventDefault();
@@ -51,7 +53,7 @@ function ContactForm() {
 			setValid(true);
 		}
 		setSubmitted(true);
-		emailjs.sendForm('service_xskellm', 'template_a7djgzv', event.target, 'user_Ok8ihHqm7lPdgKVBdzcVc').then(
+		emailjs.sendForm('service_xskellm', 'template_a7djgz(v)', event.target, 'user_Ok8ihHqm7lPdgKVBdzcVc').then(
 			(result) => {
 				console.log(result.text);
 			},
@@ -84,7 +86,7 @@ function ContactForm() {
 	return (
       <div className='contactFormBox'>
 			<h3>Contact Form</h3>
-			{submitted && valid ? <div className='successMessage'>Success! Thank you for registering!</div> : null}
+			{submitted && valid ? <div className='successMessage'>Success! Thank you for messaging us!</div> : null}
 			<form className='contactForm' onSubmit={sendEmail}>
 				<div className='formFieldBox'>
 					<input
@@ -188,7 +190,7 @@ function ContactForm() {
 						</span>
 					) : null}
 				</div>
-				<button className='button3' type='submit'>
+			   <button className='button3' type='submit' disabled={disable} onClick={submitted && valid ? () => setDisable(true) : null}>
 					send message
 				</button>
 			</form>
