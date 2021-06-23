@@ -11,7 +11,7 @@ function ContactForm() {
 		firstName: '',
 		lastName: '',
 		phone: '',
-   	email: '',
+		email: '',
 		businessType: '',
 		message: '',
 	});
@@ -44,7 +44,7 @@ function ContactForm() {
 		setValues({ ...values, message: event.target.value });
 	};
 
-   const [disable, setDisable] = React.useState(false);
+	const [disable, setDisable] = React.useState(false);
 
 	// Sending emails thru emailjs
 	function sendEmail(event) {
@@ -81,10 +81,10 @@ function ContactForm() {
 	// 	});
 
 	// 	db.ref('contacts').push(newContactRef.key);
-	// };   
+	// };
 
 	return (
-      <div className='contactFormBox'>
+		<div className='contactFormBox'>
 			<h3>Contact Form</h3>
 			{submitted && valid ? <div className='successMessage'>Success! Thank you for messaging us!</div> : null}
 			<form className='contactForm' onSubmit={sendEmail}>
@@ -190,7 +190,11 @@ function ContactForm() {
 						</span>
 					) : null}
 				</div>
-			   <button className='button3' type='submit' disabled={disable} onClick={submitted && valid ? () => setDisable(true) : null}>
+				<button
+					className='button3'
+					type='submit'
+					disabled={disable}
+					onClick={submitted && valid ? () => setDisable(true) : null}>
 					send message
 				</button>
 			</form>

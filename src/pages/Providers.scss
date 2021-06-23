@@ -1,13 +1,18 @@
-@import '../includeMediaQuery.scss';
-$breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 1920px);
+@import "../includeMediaQuery.scss";
+$breakpoints: (
+   "phone": 480px,
+   "tablet": 768px,
+   "desktop": 1024px,
+   "LGdesktop": 1920px,
+);
 
 .providers {
    margin: 0 auto;
    padding: 10rem 0;
-   @include media('<=tablet') { 
+   @include media("<=tablet") {
       padding: 2rem 0;
    }
-   
+
    .providersBox {
       display: grid;
       grid-template-columns: 1fr;
@@ -17,53 +22,51 @@ $breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 
       margin: 0 auto 5rem;
       border-radius: 2rem;
       box-shadow: 0 0 10px 0px var(--pb);
-      @include media('<=tablet') {
+      @include media("<=tablet") {
          grid-template-rows: 1fr 60rem;
          width: 90%;
       }
-      @include media('>tablet', '<=desktop') {
+      @include media(">tablet", "<=desktop") {
          grid-template-rows: 1fr 60rem;
          width: 80%;
       }
-      
-      
+
       .providersTextBox {
          background-color: rgba(235, 237, 255, 0.8);
          padding: 5rem;
          border-top-left-radius: 2rem;
          border-top-right-radius: 2rem;
-         @include media('<=desktop') { 
+         @include media("<=desktop") {
             padding: 2.5rem;
-            
+
             h2 {
                font-size: 3rem;
             }
-            
+
             p {
                font-size: 1.25rem;
                padding: 1rem;
                margin: 0;
-               
             }
          }
-         
+
          h2 {
             margin: 0 0 2rem;
             padding: 0 0 1rem;
          }
       }
-      
-      .providersImageBox{
-         background: url('../img/iStock-1189304032-Tiny.jpg');
+
+      .providersImageBox {
+         background: url("../img/iStock-1189304032-Tiny.jpg");
          background-size: cover;
          background-position: top right;
          border-bottom-left-radius: 2rem;
          border-bottom-right-radius: 2rem;
-         @include media('<=phone') {
+         @include media("<=phone") {
             background-position-x: -45rem;
          }
       }
-      
+
       .providersLine {
          width: 75%;
          margin: 2rem auto;
@@ -76,7 +79,7 @@ $breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 
          border-radius: 2rem;
       }
    }
-   
+
    .providersContactContainer {
       width: 60rem;
       height: auto;
@@ -86,14 +89,13 @@ $breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 
       grid-template-rows: 1fr;
       align-items: center;
       justify-items: center;
-      @include media('<=tablet') { 
+      @include media("<=tablet") {
          width: 90%;
          padding: 2rem 0;
       }
-      @include media('>tablet', '<=desktop') {
+      @include media(">tablet", "<=desktop") {
          width: 80%;
          padding: 2rem 0;
       }
    }
 }
-   

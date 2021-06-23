@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, withRouter } from 'react-router-dom';
 // --------
-import Intro from './components/Intro';
+import Intro from './pages/Intro';
 import Contact from './pages/Contact';
 import ApplyNow from './pages/ApplyNow';
 import DmePhaLabBus from './pages/DmePhaLabBus.js';

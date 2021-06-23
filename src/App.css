@@ -4,12 +4,12 @@
 }
 
 :root {
-  --wt: #EBEDFF;
-  --pb: #10217D;
-  --lpb: #ABC8E2;
-  --sb: #1CB5E0;
+  --wt: #ebedff;
+  --pb: #10217d;
+  --lpb: #abc8e2;
+  --sb: #1cb5e0;
   --bl: #000000;
-  --rd: #D00000;
+  --rd: #d00000;
   --lrd: #ff9495;
 }
 
@@ -26,7 +26,13 @@ html {
   font-family: 'Prompt', sans-serif;
 }
 
-html h1, html h2, html h3, html h4, html p, html a, html span {
+html h1,
+html h2,
+html h3,
+html h4,
+html p,
+html a,
+html span {
   letter-spacing: 1px;
 }
 
