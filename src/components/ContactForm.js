@@ -11,7 +11,7 @@ function ContactForm() {
 		firstName: '',
 		lastName: '',
 		phone: '',
-		email: '',
+   	email: '',
 		businessType: '',
 		message: '',
 	});
@@ -53,7 +53,7 @@ function ContactForm() {
 			setValid(true);
 		}
 		setSubmitted(true);
-		emailjs.sendForm('service_xskellm', 'template_a7djgz(v)', event.target, 'user_Ok8ihHqm7lPdgKVBdzcVc').then(
+		emailjs.sendForm('service_xskellm', 'template_a7djgzv', event.target, 'user_Ok8ihHqm7lPdgKVBdzcVc').then(
 			(result) => {
 				console.log(result.text);
 			},
