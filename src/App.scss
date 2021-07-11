@@ -15,7 +15,8 @@ $breakpoints: (
 	--wt: #ebedff;
 	// rgb(235, 237, 255)
 	--pb: #10217d;
-	--lpb: #abc8e2;
+	// --pb: rgb(16, 33, 125);
+	--lpb: rgb(171, 200, 226);
 	// rgb(171, 200, 226)
 	--sb: #1cb5e0;
 	--bl: #000000;
@@ -46,7 +47,7 @@ html {
 
 	h1 {
 		font-weight: 600;
-		font-size: 6rem;
+		font-size: 5rem;
 		color: var(--pb);
 		padding-bottom: 2.5rem;
 	}
@@ -60,7 +61,7 @@ html {
 
 	h3 {
 		font-weight: 400;
-		font-size: 2.25rem;
+		font-size: 2rem;
 		line-height: 2;
 		padding-bottom: 2rem;
 	}
