@@ -24,46 +24,122 @@
           box-shadow: 0 0 10px 0px var(--pb);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .providers .providersBox {
     -ms-grid-rows: 1fr 60rem;
         grid-template-rows: 1fr 60rem;
-    width: 90%;
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (max-width: 480px) {
   .providers .providersBox {
-    -ms-grid-rows: 1fr 60rem;
-        grid-template-rows: 1fr 60rem;
-    width: 80%;
+    width: 90%;
   }
 }
 
 .providers .providersBox .providersTextBox {
   background-color: rgba(235, 237, 255, 0.8);
-  padding: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem 2.5rem;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
 }
 
 @media (max-width: 1024px) {
-  .providers .providersBox .providersTextBox {
-    padding: 2.5rem;
+  .providers .providersBox .providersTextBox h2 {
+    font-size: 3.5rem;
   }
+}
+
+@media (max-width: 480px) {
   .providers .providersBox .providersTextBox h2 {
     font-size: 3rem;
-  }
-  .providers .providersBox .providersTextBox p {
-    font-size: 1.25rem;
-    padding: 1rem;
-    margin: 0;
   }
 }
 
 .providers .providersBox .providersTextBox h2 {
   margin: 0 0 2rem;
   padding: 0 0 1rem;
+}
+
+.providers .providersBox .providersTextBox .providersContainer {
+  padding: 2.5rem 5rem;
+}
+
+@media (max-width: 1024px) {
+  .providers .providersBox .providersTextBox .providersContainer {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+
+@media (max-width: 480px) {
+  .providers .providersBox .providersTextBox .providersContainer {
+    padding: 2.5rem 1rem;
+  }
+}
+
+.providers .providersBox .providersTextBox .providersContainer .providersIcon {
+  color: var(--sb);
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .providers .providersBox .providersTextBox .providersContainer .providersIcon {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+.providers .providersBox .providersTextBox .providersContainerHelp {
+  background-color: rgba(235, 237, 255, 0.5);
+  padding: 2.5rem 5rem;
+  margin: 0 5rem;
+  border-radius: 2rem;
+  -webkit-box-shadow: inset 0px 0px 8px 1px var(--pb);
+          box-shadow: inset 0px 0px 8px 1px var(--pb);
+}
+
+@media (max-width: 768px) {
+  .providers .providersBox .providersTextBox .providersContainerHelp {
+    padding: 2.5rem;
+    margin: 0 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .providers .providersBox .providersTextBox .providersContainerHelp {
+    margin: 0 1rem;
+  }
+}
+
+.providers .providersBox .providersTextBox .providersContainerWide {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.providers .providersBox .providersTextBox .providersContainerWide .providersHelpBox {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-row-gap: 2.5rem;
+  grid-column-gap: 5rem;
+}
+
+@media (max-width: 1024px) {
+  .providers .providersBox .providersTextBox .providersContainerWide .providersHelpBox {
+    grid-auto-flow: row;
+  }
 }
 
 .providers .providersBox .providersImageBox {
@@ -80,16 +156,12 @@
   }
 }
 
-.providers .providersBox .providersLine {
-  width: 75%;
-  margin: 2rem auto;
-  border-bottom: var(--sb) solid 1px;
-}
-
 .providers .providersBox .providersHighlight {
-  background-color: var(--pb);
   color: var(--wt);
-  border-radius: 2rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding: 0;
+  margin: 0;
 }
 
 .providers .providersContactContainer {

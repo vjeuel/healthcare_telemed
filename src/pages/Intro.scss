@@ -7,9 +7,9 @@ $breakpoints: (
 );
 
 .jumbotronPic {
-	background: url(../img/online-marketing-hIgeoQjS_iE-unsplash.jpg);
+	background: url(../img/iStock-1165067633-Tiny.jpg);
 	background-size: cover;
-	background-position: top center;
+	background-position: top right;
 	@include media('<=phone') {
 		background: url(../img/pexels-tima-miroshnichenko-5452293.jpg);
 		background-size: cover;
@@ -28,7 +28,7 @@ $breakpoints: (
 		height: calc(100vh - 163px);
 		width: 100%;
 		display: grid;
-		grid-template-rows: 2fr 1fr 1fr;
+		grid-template-rows: 5fr 2fr 1fr;
 		@include media('<=desktop') {
 			height: auto;
 			padding: 2rem 0;
@@ -36,7 +36,7 @@ $breakpoints: (
 		}
 
 		.introBox {
-			background-color: rgba(235, 237, 255, 0.5);
+			background-color: rgba(235, 237, 255, 0.85);
 			width: 50%;
 			margin: 0 auto;
 			padding: 2.5rem 2.5rem 3rem;

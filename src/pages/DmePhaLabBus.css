@@ -42,9 +42,80 @@
 
 .dme .dmeBox .dmeTextBox {
   background-color: rgba(235, 237, 255, 0.8);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
   padding: 5rem;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
+}
+
+.dme .dmeBox .dmeTextBox h2 {
+  margin: 0 0 2rem;
+  padding: 0 0 2.5rem;
+}
+
+.dme .dmeBox .dmeTextBox p {
+  padding: 0 5rem;
+  margin: 0;
+}
+
+.dme .dmeBox .dmeTextBox h2,
+.dme .dmeBox .dmeTextBox .button2,
+.dme .dmeBox .dmeTextBox .dmeTextBoxWide {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  margin: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .dme .dmeBox .dmeTextBox h2,
+  .dme .dmeBox .dmeTextBox .button2,
+  .dme .dmeBox .dmeTextBox .dmeTextBoxWide {
+    margin: 0;
+  }
+}
+
+.dme .dmeBox .dmeTextBox .button2 {
+  padding: 1rem 5rem;
+  margin-top: 5rem;
+}
+
+@media (max-width: 1024px) {
+  .dme .dmeBox .dmeTextBox .button2 {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dme .dmeBox .dmeTextBox .dmeTextContainer {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+
+.dme .dmeBox .dmeTextBox .dmeTextContainer .dmeIcon {
+  color: var(--sb);
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 1024px) {
+  .dme .dmeBox .dmeTextBox .dmeTextContainer .dmeIcon {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .dme .dmeBox .dmeTextBox .dmeTextContainer .dmeIcon {
+    width: 8rem;
+    height: 8rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -55,20 +126,9 @@
     font-size: 3rem;
   }
   .dme .dmeBox .dmeTextBox p {
-    font-size: 1.25rem;
     padding: 2rem;
     margin: 0;
   }
-}
-
-.dme .dmeBox .dmeTextBox h2 {
-  margin: 0 0 2rem;
-  padding: 0 0 1rem;
-}
-
-.dme .dmeBox .dmeTextBox p {
-  padding: 0;
-  margin: 0;
 }
 
 .dme .dmeBox .dmeImageBox {
@@ -77,12 +137,6 @@
   background-position: top right;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
-}
-
-.dme .dmeBox .dmeLine {
-  width: 75%;
-  margin: 2rem auto;
-  border-bottom: var(--sb) solid 1px;
 }
 
 .dme .dmeContactContainer {

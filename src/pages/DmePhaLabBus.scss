@@ -1,97 +1,134 @@
-@import "../includeMediaQuery.scss";
+@import '../includeMediaQuery.scss';
 $breakpoints: (
-   "phone": 480px,
-   "tablet": 768px,
-   "desktop": 1024px,
-   "LGdesktop": 1920px,
+	'phone': 480px,
+	'tablet': 768px,
+	'desktop': 1024px,
+	'LGdesktop': 1920px,
 );
 
 .dme {
-   margin: 0 auto;
-   padding: 10rem 0;
-   @include media("<=tablet") {
-      padding: 2rem 0;
-   }
+	margin: 0 auto;
+	padding: 10rem 0;
+	@include media('<=tablet') {
+		padding: 2rem 0;
+	}
 
-   .dmeBox {
-      display: grid;
-      grid-template-rows: 1fr 80rem;
-      grid-template-columns: 1fr;
-      max-width: 100vw;
-      width: 80%;
-      margin: 0 auto 5rem;
-      border-radius: 2rem;
-      box-shadow: 0 0 10px 0px var(--pb);
-      @include media("<=tablet") {
-         grid-template-rows: 1fr 60rem;
-         width: 90%;
-      }
-      @include media(">tablet", "<=desktop") {
-         grid-template-rows: 1fr 60rem;
-         width: 80%;
-      }
+	.dmeBox {
+		display: grid;
+		grid-template-rows: 1fr 80rem;
+		grid-template-columns: 1fr;
+		max-width: 100vw;
+		width: 80%;
+		margin: 0 auto 5rem;
+		border-radius: 2rem;
+		box-shadow: 0 0 10px 0px var(--pb);
+		@include media('<=tablet') {
+			grid-template-rows: 1fr 60rem;
+			width: 90%;
+		}
+		@include media('>tablet', '<=desktop') {
+			grid-template-rows: 1fr 60rem;
+			width: 80%;
+		}
 
-      .dmeTextBox {
-         background-color: rgba(235, 237, 255, 0.8);
-         padding: 5rem;
-         border-top-left-radius: 2rem;
-         border-top-right-radius: 2rem;
-         @include media("<=desktop") {
-            padding: 2.5rem;
+		.dmeTextBox {
+			background-color: rgba(235, 237, 255, 0.8);
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			justify-items: center;
+			padding: 5rem;
+			border-top-left-radius: 2rem;
+			border-top-right-radius: 2rem;
 
-            h2 {
-               font-size: 3rem;
-            }
+			h2 {
+				margin: 0 0 2rem;
+				padding: 0 0 2.5rem;
+			}
 
-            p {
-               font-size: 1.25rem;
-               padding: 2rem;
-               margin: 0;
-            }
-         }
+			p {
+				padding: 0 5rem;
+				margin: 0;
+			}
 
-         h2 {
-            margin: 0 0 2rem;
-            padding: 0 0 1rem;
-         }
+			h2,
+			.button2,
+			.dmeTextBoxWide {
+				grid-column-start: 1;
+				grid-column-end: 4;
+				margin: 1rem;
+				@include media('<=desktop') {
+					margin: 0;
+				}
+			}
 
-         p {
-            padding: 0;
-            margin: 0;
-         }
-      }
+			.button2 {
+				padding: 1rem 5rem;
+				margin-top: 5rem;
+				@include media('<=desktop') {
+					margin-top: 2.5rem;
+				}
+			}
 
-      .dmeImageBox {
-         background: url("../img/iStock-1179482344-Tiny.jpg");
-         background-size: cover;
-         background-position: top right;
-         border-bottom-left-radius: 2rem;
-         border-bottom-right-radius: 2rem;
-      }
+			.dmeTextContainer {
+				@include media('<=tablet') {
+					grid-column-start: 1;
+					grid-column-end: 4;
+				}
 
-      .dmeLine {
-         width: 75%;
-         margin: 2rem auto;
-         border-bottom: var(--sb) solid 1px;
-      }
-   }
+				.dmeIcon {
+					color: var(--sb);
+					width: 10rem;
+					height: 10rem;
+					margin-bottom: 2.5rem;
+					@include media('<=desktop') {
+						margin-bottom: 0;
+					}
+					@include media('<=tablet') {
+						width: 8rem;
+						height: 8rem;
+					}
+				}
+			}
 
-   .dmeContactContainer {
-      width: 80rem;
-      height: auto;
-      margin: 0 auto;
-      padding: 5rem;
-      display: grid;
-      grid-template-rows: 1fr;
-      align-items: center;
-      justify-items: center;
-      @include media("<=tablet") {
-         width: 90%;
-         padding: 2rem 0;
-      }
-      @include media(">tablet", "<=desktop") {
-         width: 80%;
-         padding: 2rem 0;
-      }
-   }
+			@include media('<=desktop') {
+				padding: 2.5rem;
+
+				h2 {
+					font-size: 3rem;
+				}
+
+				p {
+					padding: 2rem;
+					margin: 0;
+				}
+			}
+		}
+
+		.dmeImageBox {
+			background: url('../img/iStock-1179482344-Tiny.jpg');
+			background-size: cover;
+			background-position: top right;
+			border-bottom-left-radius: 2rem;
+			border-bottom-right-radius: 2rem;
+		}
+	}
+
+	.dmeContactContainer {
+		width: 80rem;
+		height: auto;
+		margin: 0 auto;
+		padding: 5rem;
+		display: grid;
+		grid-template-rows: 1fr;
+		align-items: center;
+		justify-items: center;
+		@include media('<=tablet') {
+			width: 90%;
+			padding: 2rem 0;
+		}
+		@include media('>tablet', '<=desktop') {
+			width: 80%;
+			padding: 2rem 0;
+		}
+	}
 }

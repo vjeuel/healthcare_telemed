@@ -1,170 +1,172 @@
 @import '../includeMediaQuery.scss';
-$breakpoints: ("phone": 480px, "tablet": 768px, "desktop": 1024px, "LGdesktop": 1920px);
+$breakpoints: (
+	'phone': 480px,
+	'tablet': 768px,
+	'desktop': 1024px,
+	'LGdesktop': 1920px,
+);
 
 nav {
-   background-color: var(--wt);
-   border-color: var(--wt);
-   display: grid;
-   width: 80%;
-   margin: 0 auto;
-   padding: 0 2.5rem;
-   position: relative;
-   grid-template-rows: 5rem 10rem;
-   grid-template-columns: 25rem 2fr;
-   border-bottom-right-radius: 2rem;
-   border-bottom-left-radius: 2rem;
-   box-shadow: 0 0 10px 0px var(--pb);
-   @include media('<=phone') {
-      width: 100vw;
-      height: auto;
-      padding: 2rem;
-      grid-template-rows: repeat(3, auto);
-      grid-template-columns: 1fr;
-      grid-gap: 2rem;
-      justify-content: center;
-   }
-   @include media('>phone', '<=tablet') {
-      width: 100vw;
-      height: auto;
-      padding: 2rem;
-      grid-template-rows: repeat(3, auto);
-      grid-template-columns: 1fr;
-      grid-gap: 2rem;
-      justify-items: center;
-   }
-   @include media('>tablet', '<=desktop') {
-      grid-template-columns: 16rem 2fr;
-      width: 100vw;
-   }
-   
-   .logoTop {
-      width: 22rem;
-      grid-row-start: 1;
-      grid-row-end: 3;
-      justify-self: flex-start;
-      align-self: center;
-      @include media('<=phone') {
-         grid-row-start: 1;
-         grid-row-end: 1;
-         width: 18rem;
-         justify-self: center;
-         
-         .logoVertical {
-            display: none;
-         }
-      }
-      
-      @include media('>phone', '<=tablet') {
-         grid-row-start: 1;
-         grid-row-end: 1;
-         width: 18rem;
-         justify-self: center;
-         
-         .logoVertical {
-            display: none;
-         }
-      }
-      @include media('>tablet', '<=desktop') {
-         width: 11rem;
-         
-         .logoHorizontal {
-            display: none;
-         }
-      }
-      @include media('>desktop') {
-         .logoVertical {
-            display: none;
-         }
-      }
-   }
-   
-   .navTop {
-      display: grid;
-      grid-template-columns: auto repeat(4, auto);
-      align-items: center;
-      justify-content: right;
-      @include media('<=phone') {
-         grid-template-columns: 1fr;
-         grid-template-rows: auto repeat(4, auto);
-         justify-content: center;
-         
-         .button1 {
-            border: 0;
-         }
+	background-color: var(--wt);
+	border-color: var(--wt);
+	display: grid;
+	width: 80%;
+	margin: 0 auto;
+	padding: 0 2.5rem;
+	position: relative;
+	grid-template-rows: 5rem 10rem;
+	grid-template-columns: 25rem 2fr;
+	border-bottom-right-radius: 2rem;
+	border-bottom-left-radius: 2rem;
+	box-shadow: 0 0 10px 0px var(--pb);
+	@include media('<=phone') {
+		width: 100vw;
+		height: auto;
+		padding: 2rem;
+		grid-template-rows: repeat(3, auto);
+		grid-template-columns: 1fr;
+		grid-gap: 2rem;
+		justify-content: center;
+	}
+	@include media('>phone', '<=tablet') {
+		width: 100vw;
+		height: auto;
+		padding: 2rem;
+		grid-template-rows: repeat(3, auto);
+		grid-template-columns: 1fr;
+		grid-gap: 2rem;
+		justify-items: center;
+	}
+	@include media('>tablet', '<=desktop') {
+		grid-template-columns: 16rem 2fr;
+		width: 100vw;
+	}
 
-         display: none;
-      }
+	.logoTop {
+		width: 22rem;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		justify-self: flex-start;
+		align-self: center;
+		@include media('<=phone') {
+			grid-row-start: 1;
+			grid-row-end: 1;
+			width: 18rem;
+			justify-self: center;
 
-      @include media('>phone', '<=tablet') { 
-         .button1 {
-            border: 0;
-         }
-      }
-      
-      .faIcon {
-         width: 1.1rem;
-         margin-right: 5px;
-      }      
-   }
+			.logoVertical {
+				display: none;
+			}
+		}
 
-   .navTopMobile {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+		@include media('>phone', '<=tablet') {
+			grid-row-start: 1;
+			grid-row-end: 1;
+			width: 18rem;
+			justify-self: center;
 
-      .faIcon {
-         width: 3rem;
-         height: 3rem;
-      }
+			.logoVertical {
+				display: none;
+			}
+		}
+		@include media('>tablet', '<=desktop') {
+			width: 11rem;
 
-      .button1 {
-         border: none;
-      }
+			.logoHorizontal {
+				display: none;
+			}
+		}
+		@include media('>desktop') {
+			.logoVertical {
+				display: none;
+			}
+		}
+	}
 
-      @include media('>phone') {
-         display: none;
-      }
-   }
-   
-   .navBottom {
-      display: grid;
-      grid-template-columns: repeat(5, auto);
-      align-items: center;
-      justify-content: flex-end;
-      border-top: var(--sb) solid 2px;
-      @include media ('<=phone') {
-         display: none;
-      }
-      @include media('>phone', '<=tablet') { 
-         grid-template-rows: 1fr 1fr;
-         grid-template-columns: repeat(4, auto);
+	.navTop {
+		display: grid;
+		grid-template-columns: auto repeat(4, auto);
+		align-items: center;
+		justify-content: right;
+		@include media('<=phone') {
+			grid-template-columns: 1fr;
+			grid-template-rows: auto repeat(4, auto);
+			justify-content: center;
 
+			.button1 {
+				border: 0;
+			}
 
-         span {
-            grid-area: 1 / 5 / 1 / 1;
-         }
-         
-      }
-     
-      span {
-         margin: 2rem;
-      }
-   
-   }
+			display: none;
+		}
 
-   .navBottomMobile {
-      @include media('>phone') {
-      display: none;
-      }
+		@include media('>phone', '<=tablet') {
+			.button1 {
+				border: 0;
+			}
+		}
 
-      @include media('<=phone') {
-         display: grid;
-         grid-template-columns: auto;
-         grid-template-rows: repeat(3, auto);
-         justify-content: center;
-      }
-      
-      span {
-         margin: 1rem;
-      }
-   }
+		.faIcon {
+			width: 1.1rem;
+			margin-right: 5px;
+		}
+	}
+
+	.navTopMobile {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+
+		.faIcon {
+			width: 3rem;
+			height: 3rem;
+		}
+
+		.button1 {
+			border: none;
+		}
+
+		@include media('>phone') {
+			display: none;
+		}
+	}
+
+	.navBottom {
+		display: grid;
+		grid-template-columns: repeat(5, auto);
+		align-items: center;
+		justify-content: flex-end;
+		border-top: var(--sb) solid 2px;
+		@include media('<=phone') {
+			display: none;
+		}
+		@include media('>phone', '<=tablet') {
+			grid-template-rows: 1fr 1fr;
+			grid-template-columns: repeat(4, auto);
+
+			span {
+				grid-area: 1 / 5 / 1 / 1;
+			}
+		}
+
+		span {
+			margin: 2rem;
+		}
+	}
+
+	.navBottomMobile {
+		@include media('>phone') {
+			display: none;
+		}
+
+		@include media('<=phone') {
+			display: grid;
+			grid-template-columns: auto;
+			grid-template-rows: repeat(3, auto);
+			justify-content: center;
+		}
+
+		span {
+			margin: 1rem;
+		}
+	}
 }
